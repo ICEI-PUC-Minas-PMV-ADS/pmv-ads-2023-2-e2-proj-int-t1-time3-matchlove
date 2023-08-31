@@ -1,11 +1,9 @@
-# pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove
-pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove created by GitHub Classroom
 
 # Love Match
 
-`CURSO`
+`CURSO` Analise e Desenvolvimento de Sistemas PUC Minas
  
-`DISCIPLINA`
+`DISCIPLINA` Projeto - Desenvolvimento de uma aplicação Interativa
 
 `SEMESTRE` 2
 
