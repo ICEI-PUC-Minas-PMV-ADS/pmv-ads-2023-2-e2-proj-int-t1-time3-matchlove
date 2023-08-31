@@ -122,6 +122,7 @@ Abaixo são apresentadas as restrições que limitam a execução do plano e que
 
 2. **Participar de eventos sociais universitários**: Lucas usa o aplicativo para descobrir eventos sociais fora do ambiente acadêmico, como encontros casuais e festas, onde ele pode conhecer novas pessoas e fazer amizades.
 
+
 ## Persona: Sofia Almeida (27 anos, Enfermeira)
 
 1. **Conectar-se com colegas da área da saúde**: Sofia usa o aplicativo para encontrar outros profissionais de saúde e compartilhar experiências relacionadas ao trabalho, aproveitando para construir relacionamentos mais profundos.
@@ -140,4 +141,8 @@ Abaixo são apresentadas as restrições que limitam a execução do plano e que
 
 2. **Encontrar parceiros de viagem**: Pedro usa o aplicativo para conhecer pessoas que compartilham seu interesse por viagens e aventuras, permitindo-lhe encontrar companhia para explorar novos lugares.
 
+
+##  Diagrama de Casos de Uso
+
+[Match Love - Diagrama.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/files/12486003/Match.Love.-.Diagrama.pdf)
 
