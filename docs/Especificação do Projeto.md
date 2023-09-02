@@ -144,3 +144,5 @@ Abaixo são apresentadas as restrições que limitam a execução do plano e que
 
 ##  Diagrama de Casos de Uso
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/assets/128434710/7b64c3d3-be53-4fbc-967b-1c5476d75262)
+
