@@ -131,7 +131,7 @@ Abaixo são apresentadas as restrições que limitam a execução do plano e que
 
 1. **Conectar-se com colegas da área da saúde**: Sofia usa o aplicativo para encontrar outros profissionais de saúde e compartilhar experiências relacionadas ao trabalho, aproveitando para construir relacionamentos mais profundos.
 
-2. **Agendar encontros flexíveis**: Devido aos horários irregulares de trabalho, Sofia utiliza o aplicativo para encontrar pessoas que compreendem suas limitações de tempo e estão dispostas a marcar encontros em horários convenientes para ambos.
+2. **Marcar encontros flexíveis**: Devido aos horários irregulares de trabalho, Sofia utiliza o aplicativo para encontrar pessoas que compreendem suas limitações de tempo e estão dispostas a marcar encontros em horários convenientes para ambos.
 
 ## Persona: Rafael Pereira (38 anos, Professor)
 
