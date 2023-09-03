@@ -71,7 +71,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-02| A plataforma deve apresentar, para cada usuário, uma imagem correspondente ào usuário.  (thumbnail).   | MÉDIA |
 |RF-03| A plataforma deve permitir ao usuário visualizar informações interativas sobre outro usuário, como filme preferido, hobbies. (Nada de entrevista de emprego).  | MÉDIA |
 |RF-04| A plataforma deve oferecer um menu adicional que permita ao usuário visualizar publicações dos usuários sobre assuntos diversos, criando interesses sem precisar dar MATCH.      | MÉDIA |
-|RF-05| A plataforma deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar interesses mutuos,| ALTA |
+|RF-05| A plataforma deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar interesses mutuos. | ALTA |
 |RF-08| A plataforma deve permitir que os usuários salvem os perfis pesquisados, publicações de usuários, armazenando essas informações no armazenamento local do navegador.  | MÉDIA |
 |RF-09| A Plataforma de oferecer uma funcionalidade para que o usuário denuncie outro. | ALTA |
 |RF-10| A plataforma deve permitir que os usuários possam comentar sobre as publicações. | MÉDIA |
