@@ -26,7 +26,10 @@
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-## Apresentação dia 03/09
+## Apresentação dia 03/09 
+
+*  https://www.canva.com/design/DAFtDY86AJU/Lqj6AseJdUXK4FUUx1g75A/edit?utm_content=DAFtDY86AJU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton *
+  
 
 ## Apresentação dia 
 
