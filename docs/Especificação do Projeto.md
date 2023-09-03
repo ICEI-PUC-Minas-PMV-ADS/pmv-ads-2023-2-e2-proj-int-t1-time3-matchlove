@@ -106,7 +106,7 @@ Abaixo são apresentadas as restrições que limitam a execução do plano e que
 | RE-04   | O sistema deve aderir estritamente às diretrizes da disciplina.                               |
 
 
-##  Casos de uso 
+##  Histórias de Usuário 
 
 ## Persona: Fernanda Silva (55 anos, Servidora pública)
 
