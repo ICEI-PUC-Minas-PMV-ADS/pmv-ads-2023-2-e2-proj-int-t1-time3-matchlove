@@ -19,7 +19,7 @@ A equipe está organizada da seguinte maneira:
 * Scrum Master: Joao Pedro Vargas
 * Product Owner: Joao Victor Brito
 * Equipe de Desenvolvimento
-    * Pedro Henrique
+    * Pedro Roberto Gomes da Silva Abadia
     * Vinicius Dias
     * Pedro Henrique Ferreira Amorim
 * Equipe de Design
