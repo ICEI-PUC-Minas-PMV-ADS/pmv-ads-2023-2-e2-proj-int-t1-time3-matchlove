@@ -6,10 +6,10 @@ Os elementos do projeto são criados em várias plataformas e a tabela a seguir 
 
 |AMBIENTE| PLATAFORMA | LINK DE ACESSO |
 |--------------------|------------------------------------|----------------------------------------|
-|Repositório de código fonte |GitHub |  |
-|Documentos do projeto | GitHub |   |
+|Repositório de código fonte |GitHub | https://abre.ai/gLTF |
+|Documentos do projeto | GitHub |  https://abre.ai/gLTF |
 |Projeto de Interface e Wireframes | Figma |   |
-|Gerenciamento do Projeto |Trello  |   |
+|Gerenciamento do Projeto |Trello  | https://abre.ai/gLTC  |
 
 ## Gerenciamento de Projeto
 
@@ -23,7 +23,7 @@ A equipe está organizada da seguinte maneira:
     * Vinicius Dias
     * Pedro Henrique Ferreira Amorim
 * Equipe de Design
-  * Marcela Ratton
+    * Marcela Ratton
     
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando Trello, estruturado com as seguintes listas: 
