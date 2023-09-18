@@ -23,7 +23,8 @@ A equipe está organizada da seguinte maneira:
     * Vinicius Dias
     * Pedro Henrique Ferreira Amorim
 * Equipe de Design
-  * Marcela
+  * Marcela Ratton
+    
 
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando Trello, estruturado com as seguintes listas: 
 
