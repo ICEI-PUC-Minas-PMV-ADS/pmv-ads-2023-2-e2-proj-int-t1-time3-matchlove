@@ -14,66 +14,57 @@
 
 ## Projeto da Base de Dados 
 
--- Tabela para armazenar informações sobre as pessoas
-CREATE TABLE Pessoa (
-    id INT PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    genero VARCHAR(10),
-    dt_nasc DATE,
-    orient_sex VARCHAR(255)
-);
+## Estrutura do Banco de Dados - Projeto de Software
 
--- Tabela para registrar as curtidas e correspondências
-CREATE TABLE Curtidas (
-    id INT PRIMARY KEY,
-    id_remet INT NOT NULL, -- ID da pessoa que enviou a curtida
-    id_dest INT NOT NULL, -- ID da pessoa que recebeu a curtida
-    deu_match BOOLEAN DEFAULT FALSE, -- Indica se houve um "match"
-    FOREIGN KEY (id_remet) REFERENCES Pessoa(id),
-    FOREIGN KEY (id_dest) REFERENCES Pessoa(id)
-);
+### Tabela: Pessoa
+| Campo       | Tipo         | Restrições                 |
+|-------------|--------------|----------------------------|
+| id          | INT          | PRIMARY KEY                |
+| nome        | VARCHAR(255) | NOT NULL                   |
+| genero      | VARCHAR(10)  |                            |
+| dt_nasc     | DATE         |                            |
+| orient_sex  | VARCHAR(255) |                            |
 
--- Tabela para registrar correspondências
-CREATE TABLE Match (
-    pessoa_1 INT NOT NULL,
-    pessoa_2 INT NOT NULL,
-    PRIMARY KEY (pessoa_1, pessoa_2), -- A combinação de pessoas forma uma chave primária composta
-    FOREIGN KEY (pessoa_1) REFERENCES Pessoa(id),
-    FOREIGN KEY (pessoa_2) REFERENCES Pessoa(id)
-);
+### Tabela: Curtidas
+| Campo        | Tipo         | Restrições                         |
+|--------------|--------------|------------------------------------|
+| id           | INT          | PRIMARY KEY                        |
+| id_remet     | INT          | NOT NULL, FOREIGN KEY (Pessoa)    |
+| id_dest      | INT          | NOT NULL, FOREIGN KEY (Pessoa)    |
+| deu_match    | BOOLEAN      | DEFAULT FALSE                      |
 
--- Tabela para armazenar mensagens
-CREATE TABLE Mensagem (
-    id_msg INT PRIMARY KEY,
-    id_remet INT NOT NULL, -- ID da pessoa que enviou a mensagem
-    id_dest INT NOT NULL, -- ID da pessoa que recebeu a mensagem
-    mensagem TEXT,
-    FOREIGN KEY (id_remet) REFERENCES Pessoa(id),
-    FOREIGN KEY (id_dest) REFERENCES Pessoa(id)
-);
+### Tabela: Match
+| Campo       | Tipo         | Restrições                     |
+|-------------|--------------|--------------------------------|
+| pessoa_1    | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
+| pessoa_2    | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
 
--- Tabela para registrar denúncias
-CREATE TABLE Denuncia (
-    id_denuncia INT PRIMARY KEY,
-    id_remet INT NOT NULL, -- ID da pessoa que fez a denúncia
-    id_dest INT NOT NULL, -- ID da pessoa denunciada
-    motivo VARCHAR(255),
-    FOREIGN KEY (id_remet) REFERENCES Pessoa(id),
-    FOREIGN KEY (id_dest) REFERENCES Pessoa(id)
-);
+### Tabela: Mensagem
+| Campo       | Tipo         | Restrições                     |
+|-------------|--------------|--------------------------------|
+| id_msg      | INT          | PRIMARY KEY                     |
+| id_remet    | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
+| id_dest     | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
+| mensagem    | TEXT         |                                |
 
--- Tabela para associar pessoas a eventos
-CREATE TABLE Participantes (
-    id INT PRIMARY KEY,
-    id_pessoa INT NOT NULL, -- ID da pessoa que está participando do evento
-    id_evento INT NOT NULL, -- ID do evento
-    FOREIGN KEY (id_pessoa) REFERENCES Pessoa(id),
-    FOREIGN KEY (id_evento) REFERENCES Evento(id)
-);
+### Tabela: Denuncia
+| Campo       | Tipo         | Restrições                     |
+|-------------|--------------|--------------------------------|
+| id_denuncia | INT          | PRIMARY KEY                     |
+| id_remet    | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
+| id_dest     | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
+| motivo      | VARCHAR(255) |                                |
 
--- Tabela para eventos
-CREATE TABLE Evento (
-    id INT PRIMARY KEY,
-    nome_evento VARCHAR(255),
-    data_evento DATE
-);
+### Tabela: Participantes
+| Campo       | Tipo         | Restrições                     |
+|-------------|--------------|--------------------------------|
+| id          | INT          | PRIMARY KEY                     |
+| id_pessoa   | INT          | NOT NULL, FOREIGN KEY (Pessoa) |
+| id_evento   | INT          | NOT NULL, FOREIGN KEY (Evento)  |
+
+### Tabela: Evento
+| Campo       | Tipo         | Restrições                     |
+|-------------|--------------|--------------------------------|
+| id          | INT          | PRIMARY KEY                     |
+| nome_evento | VARCHAR(255) |                                |
+| data_evento | DATE         |                                |
