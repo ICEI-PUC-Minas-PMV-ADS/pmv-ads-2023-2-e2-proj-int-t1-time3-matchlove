@@ -12,7 +12,7 @@ Os testes serão conduzidos para verificar a conformidade do software com os req
 - **Objetivo:** Verificar a funcionalidade de cada componente isoladamente.
 - **Escopo:** Todos os módulos e componentes individuais do software.
 - **Responsável:** Equipe de desenvolvimento.
-- **Métodos:** Testes automatizados usando estruturas de teste, como JUnit.
+- **Métodos:** Testes automatizados usando estruturas de teste.
 - **Critérios de Aceitação:** Todos os testes de unidade devem passar com sucesso.
 
 ### Teste de Integração
@@ -25,21 +25,21 @@ Os testes serão conduzidos para verificar a conformidade do software com os req
 ### Teste de Aceitação do Usuário
 - **Objetivo:** Verificar se o software atende aos critérios de aceitação definidos pelos usuários.
 - **Escopo:** Casos de uso e cenários definidos pelos usuários.
-- **Responsável:** Equipe de testes.
+- **Responsável:** Equipe de Desenvolvimento.
 - **Métodos:** Testes de aceitação manuais.
 - **Critérios de Aceitação:** O software deve atender a todos os critérios definidos pelos usuários.
 
 ### Teste de Desempenho
 - **Objetivo:** Avaliar a resposta e a escalabilidade da plataforma.
 - **Escopo:** Testes de carga e estresse, análise de desempenho.
-- **Responsável:** Equipe de testes.
-- **Métodos:** Ferramentas de teste de desempenho, como JMeter.
+- **Responsável:** Equipe de desenvolvimento.
+- **Métodos:** Ferramentas de teste de desempenho.
 - **Critérios de Aceitação:** O software deve manter um desempenho aceitável sob carga.
 
 ### Teste de Segurança
 - **Objetivo:** Identificar vulnerabilidades e garantir a proteção dos dados dos usuários.
 - **Escopo:** Testes de penetração, análise de segurança.
-- **Responsável:** Equipe de testes de segurança.
+- **Responsável:** Equipe de Desenvolvinmento.
 - **Métodos:** Ferramentas de teste de penetração e análise de segurança.
 - **Critérios de Aceitação:** Todas as vulnerabilidades críticas devem ser corrigidas.
 
