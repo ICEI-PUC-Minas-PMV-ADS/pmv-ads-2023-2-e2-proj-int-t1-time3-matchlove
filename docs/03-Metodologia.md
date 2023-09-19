@@ -39,7 +39,9 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
                                             Figura X - Tela do kanban utilizada pelo grupo
 
   
-A tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias: ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/assets/128434710/dc76da49-03fd-4bf7-8496-1d097a0aef5b)
+A tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/assets/128434710/dc76da49-03fd-4bf7-8496-1d097a0aef5b)
 
 
   
