@@ -1,7 +1,7 @@
 # Plano de Teste de Software
 
 ## Introdução
-Este documento descreve o plano de teste de software para o projeto [NOME_DO_PROJETO], de acordo com os requisitos funcionais (RF), requisitos não funcionais (RNF) e restrições (RE) estabelecidos. O objetivo deste plano é garantir que o software atenda aos critérios de qualidade e funcionalidade definidos.
+Este documento descreve o plano de teste de software para o projeto Love Match, de acordo com os requisitos funcionais (RF), requisitos não funcionais (RNF) e restrições (RE) estabelecidos. O objetivo deste plano é garantir que o software atenda aos critérios de qualidade e funcionalidade definidos.
 
 ## Escopo dos Testes
 Os testes serão conduzidos para verificar a conformidade do software com os requisitos e restrições.
@@ -56,10 +56,6 @@ Os recursos necessários para a realização dos testes incluem:
 - Hardware e software de teste
 - Documentação de requisitos e restrições
 
-## Critérios de Aceitação
-Os testes serão considerados bem-sucedidos se atenderem aos seguintes critérios de aceitação:
-
-- [Inserir critérios de aceitação para cada tipo de teste]
 
 ## Responsabilidades de Teste
 As responsabilidades de teste são atribuídas da seguinte forma:
