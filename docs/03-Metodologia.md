@@ -8,7 +8,7 @@ Os elementos do projeto são criados em várias plataformas e a tabela a seguir 
 |--------------------|------------------------------------|----------------------------------------|
 |Repositório de código fonte |GitHub | https://abre.ai/gLTF |
 |Documentos do projeto | GitHub |  https://abre.ai/gLTF |
-|Projeto de Interface e Wireframes | Figma |   |
+|Projeto de Interface e Wireframes | Figma | https://abre.ai/gNIg  |
 |Gerenciamento do Projeto |Trello  | https://abre.ai/gLTC  |
 
 ## Gerenciamento de Projeto
