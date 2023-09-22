@@ -1,92 +1,158 @@
-# Plano de Teste de Software
+# Plano de Casos de Teste
 
-## Introdução
-Este documento descreve o plano de teste de software para o projeto Love Match, de acordo com os requisitos funcionais (RF) e requisitos não funcionais (RNF)  estabelecidos. O objetivo deste plano é garantir que o software atenda aos critérios de qualidade e funcionalidade definidos.
+## RF-01: Seleção dinâmica de ícones de perfis na página principal
+### Teste 1: Verificação de exibição de ícones de perfis
 
-## Escopo dos Testes
-Os testes serão conduzidos para verificar a conformidade do software com os requisitos e restrições.
+**Objetivo:** Verificar se a plataforma apresenta na página principal uma seleção dinâmica de ícones de perfis com base nos cadastros realizados.
 
-## Estratégia de Teste
+**Passos:**
 
-### Teste de Unidade
-- **Objetivo:** Verificar a funcionalidade de cada componente isoladamente.
-- **Escopo:** Todos os módulos e componentes individuais do software.
-- **Responsável:** Equipe de desenvolvimento.
-- **Métodos:** Testes automatizados usando estruturas de teste.
-- **Critérios de Aceitação:** Todos os testes de unidade devem passar com sucesso.
+1. Acesse a página principal da plataforma.
+2. Verifique se há ícones de perfis exibidos na página.
+3. Verifique se os ícones de perfis são atualizados dinamicamente com base nos cadastros realizados.
 
-### Teste de Integração
-- **Objetivo:** Verificar a interação entre os componentes do sistema.
-- **Escopo:** Integração de módulos e comunicação entre subsistemas.
-- **Responsável:** Equipe de desenvolvimento.
-- **Métodos:** Testes de integração automatizados e manuais.
-- **Critérios de Aceitação:** As integrações devem funcionar sem erros.
+**Critérios de Sucesso:**
 
-### Teste de Aceitação do Usuário
-- **Objetivo:** Verificar se o software atende aos critérios de aceitação definidos pelos usuários.
-- **Escopo:** Casos de uso e cenários definidos pelos usuários.
-- **Responsável:** Equipe de Desenvolvimento.
-- **Métodos:** Testes de aceitação manuais.
-- **Critérios de Aceitação:** O software deve atender a todos os critérios definidos pelos usuários.
+- Os ícones de perfis devem ser exibidos na página principal.
+- Os ícones de perfis devem ser atualizados conforme novos cadastros são realizados (canais).
 
-### Teste de Desempenho
-- **Objetivo:** Avaliar a resposta e a escalabilidade da plataforma.
-- **Escopo:** Testes de carga e estresse, análise de desempenho.
-- **Responsável:** Equipe de desenvolvimento.
-- **Métodos:** Ferramentas de teste de desempenho.
-- **Critérios de Aceitação:** O software deve manter um desempenho aceitável sob carga.
+## RF-02: Apresentação de imagem correspondente ao usuário
+### Teste 2: Verificação da exibição da imagem de perfil
 
-### Teste de Segurança
-- **Objetivo:** Identificar vulnerabilidades e garantir a proteção dos dados dos usuários.
-- **Escopo:** Testes de penetração, análise de segurança.
-- **Responsável:** Equipe de Desenvolvinmento.
-- **Métodos:** Ferramentas de teste de penetração e análise de segurança.
-- **Critérios de Aceitação:** Todas as vulnerabilidades críticas devem ser corrigidas.
+**Objetivo:** Verificar se a plataforma apresenta a imagem correspondente ao usuário (thumbnail) corretamente.
 
+**Passos:**
 
-## Recursos de Teste
-Os recursos necessários para a realização dos testes incluem:
+1. Faça login em uma conta de usuário.
+2. Acesse o perfil do usuário logado.
+3. Verifique se a imagem de perfil do usuário está sendo exibida.
 
-- Ambiente de desenvolvimento e produção
-- Equipe de testes
-- Hardware e software de teste
-- Documentação de requisitos e restrições
+**Critérios de Sucesso:**
 
+- A imagem de perfil do usuário deve ser exibida corretamente em seu perfil.
 
-## Responsabilidades de Teste
-As responsabilidades de teste são atribuídas da seguinte forma:
+## RF-03: Visualização de informações interativas sobre outro usuário
+### Teste 3: Verificação da visualização de informações sobre outro usuário
 
+**Objetivo:** Verificar se a plataforma permite ao usuário visualizar informações interativas sobre outro usuário, como filme preferido e hobbies.
 
-### Scrum Master (Joao Pedro Vargas):
-- Coordenar a equipe de desenvolvimento e design para garantir que os testes sejam realizados de acordo com o plano.
-- Garantir que o plano de teste esteja alinhado com os objetivos e metas do projeto.
+**Passos:**
 
-### Product Owner (Joao Victor Brito):
-- Definir os critérios de aceitação para os testes.
-- Priorizar os casos de teste com base nos requisitos e necessidades dos usuários.
-- Revisar e aprovar os resultados dos testes.
+1. Faça login em uma conta de usuário.
+2. Acesse o perfil de outro usuário.
+3. Verifique se é possível visualizar informações como filme preferido e hobbies do outro usuário.
 
-### Equipe de Desenvolvimento (Pedro Roberto Gomes da Silva Abadia, Vinicius Dias, Pedro Henrique Ferreira Amorim):
-- Desenvolver os casos de teste de unidade para os componentes que estão desenvolvendo.
-- Realizar testes de integração para verificar a interação entre os módulos.
-- Corrigir bugs e problemas identificados durante os testes.
-- Participar de testes de aceitação do usuário e corrigir problemas conforme necessário.
+**Critérios de Sucesso:**
 
-### Equipe de Design (Marcela Ratton):
-- Colaborar com a equipe de desenvolvimento na identificação de possíveis problemas de usabilidade.
-- Revisar a aparência e a experiência do usuário durante os testes de aceitação.
-- Garantir que o design esteja alinhado com os requisitos de design definidos.
+- As informações sobre o outro usuário (filme preferido e hobbies) devem ser visíveis no perfil.
 
+## RF-04: Menu adicional para visualizar publicações de usuários
+### Teste 4: Verificação da funcionalidade de menu adicional
 
-## Relatórios de Teste
-Os resultados dos testes serão registrados em relatórios de teste que incluirão:
+**Objetivo:** Verificar se a plataforma oferece um menu adicional que permite ao usuário visualizar publicações dos usuários sobre assuntos diversos, sem precisar dar MATCH.
 
-- Resultados dos testes
-- Problemas encontrados (se houver)
-- Status de conformidade com os critérios de aceitação
+**Passos:**
 
-## Revisão e Atualização
-Este plano de teste de software será revisado e atualizado conforme necessário à medida que o projeto avança e novos requisitos ou restrições surgem.
+1. Faça login em uma conta de usuário.
+2. Acesse o menu adicional.
+3. Verifique se é possível visualizar as publicações dos usuários sobre assuntos diversos.
 
+**Critérios de Sucesso:**
 
-Este plano de teste de software está sujeito a revisões e atualizações à medida que o projeto progride.
+- O menu adicional deve permitir a visualização de publicações dos usuários.
+
+## RF-05: Funcionalidade de filtro/pesquisa
+### Teste 5: Verificação da funcionalidade de filtro/pesquisa
+
+**Objetivo:** Verificar se a plataforma oferece a funcionalidade de filtro/pesquisa para permitir ao usuário localizar interesses mútuos.
+
+**Passos:**
+
+1. Faça login em uma conta de usuário.
+2. Acesse a funcionalidade de filtro/pesquisa.
+3. Realize uma pesquisa com base em interesses mútuos.
+4. Verifique se os resultados da pesquisa correspondem aos interesses mútuos.
+
+**Critérios de Sucesso:**
+
+- A funcionalidade de filtro/pesquisa deve retornar resultados que correspondam aos interesses mútuos.
+
+## RF-06: Funcionalidade de notificações
+### Teste 6: Verificação da funcionalidade de notificações
+
+**Objetivo:** Verificar se a plataforma oferece a funcionalidade de notificações, permitindo aos usuários receberem alertas sobre novas mensagens, comentários ou atividades relevantes em seus perfis e publicações.
+
+**Passos:**
+
+1. Faça login em uma conta de usuário.
+2. Envie uma mensagem ou faça um comentário.
+3. Verifique se a plataforma exibe notificações para as atividades realizadas.
+
+**Critérios de Sucesso:**
+
+- A plataforma deve exibir notificações para novas mensagens, comentários ou atividades relevantes.
+
+## RF-07: Sistema de classificação ou avaliação de perfis de usuários
+### Teste 7: Verificação do sistema de classificação de perfis
+
+**Objetivo:** Verificar se a plataforma inclui um sistema de classificação ou avaliação de perfis de usuários.
+
+**Passos:**
+
+1. Faça login em uma conta de usuário.
+2. Acesse o perfil de outro usuário.
+3. Tente classificar ou avaliar o perfil do outro usuário.
+4. Verifique se a plataforma registra a classificação ou avaliação com sucesso.
+
+**Critérios de Sucesso:**
+
+- A plataforma deve permitir a classificação ou avaliação de perfis de usuários.
+
+## RF-08: Funcionalidade de salvamento de perfis pesquisados
+### Teste 8: Verificação da funcionalidade de salvamento de perfis
+
+**Objetivo:** Verificar se a plataforma permite que os usuários salvem os perfis pesquisados, armazenando essas informações no armazenamento local do navegador.
+
+**Passos:**
+
+1. Faça login em uma conta de usuário.
+2. Pesquise e acesse o perfil de outro usuário.
+3. Tente salvar o perfil do outro usuário.
+4. Verifique se a plataforma armazena o perfil no armazenamento local do navegador.
+
+**Critérios de Sucesso:**
+
+- A plataforma deve permitir o salvamento de perfis pesquisados no armazenamento local do navegador.
+
+## RF-09: Funcionalidade de denúncia de má conduta
+### Teste 9: Verificação da funcionalidade de denúncia de má conduta
+
+**Objetivo:** Verificar se a plataforma oferece uma funcionalidade para que o usuário denuncie perfis de usuário praticando má conduta.
+
+**Passos:**
+
+1. Faça login em uma conta de usuário.
+2. Acesse o perfil de outro usuário.
+3. Procure por uma opção de denúncia de má conduta.
+4. Tente denunciar o perfil do outro usuário.
+5. Verifique se a plataforma registra a denúncia com sucesso.
+
+**Critérios de Sucesso:**
+
+- A plataforma deve permitir a denúncia de perfis de usuário praticando má conduta.
+
+## RF-10: Funcionalidade de comentários sobre publicações
+### Teste 10: Verificação da funcionalidade de comentários
+
+**Objetivo:** Verificar se a plataforma permite que os usuários possam comentar sobre as publicações.
+
+**Passos:**
+
+1. Faça login em uma conta de usuário.
+2. Acesse uma publicação.
+3. Tente adicionar um comentário à publicação.
+4. Verifique se o comentário é publicado com sucesso.
+
+**Critérios de Sucesso:**
+
+- A plataforma deve permitir que os usuários adicionem comentários às publicações.
