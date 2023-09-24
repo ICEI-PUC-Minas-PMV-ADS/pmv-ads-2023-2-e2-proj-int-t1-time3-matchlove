@@ -25,8 +25,7 @@ Será aplicado um teste em Escala Likert de 5 pontos, onde 1 representa "Discord
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-001: A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku).
 | **Objetivo do Teste** 	| Verificar se a aplicação está acessível publicamente na Internet através dos ambientes especificados.
-| **Passos** 	           | 1. Acessar a plataforma a partir de um navegador web.
-                        | 2. Verificar se a plataforma está disponível nos ambientes mencionados (Repl.it, GitHub Pages, Heroku).
+| **Passos** 	           | - 1. Acessar a plataforma a partir de um navegador web. - 2. Verificar se a plataforma está disponível nos ambientes mencionados (Repl.it, GitHub Pages, Heroku).
 | **Critério de Êxito**  | A aplicação está acessível publicamente na Internet através dos ambientes especificados.
 
 | **Caso de Teste** 	| CT-12 - Responsividade
