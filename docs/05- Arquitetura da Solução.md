@@ -3,7 +3,7 @@
 
 ## Diagrama de Classes
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/assets/128434710/a7188e19-24ba-4966-8c68-52539d11a9a0)
+![image]https://ibb.co/Z20p9zb
 
 
 ## Modelo Entidade de Relacionamento
