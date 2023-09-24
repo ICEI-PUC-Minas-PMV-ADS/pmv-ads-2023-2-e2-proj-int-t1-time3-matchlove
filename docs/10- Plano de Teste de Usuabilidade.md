@@ -4,76 +4,89 @@
 
 O objetivo deste teste é avaliar a usabilidade da aplicação web de navegador chamada Love Match, que tem como função conectar pessoas que têm interesses em comum. A aplicação permite que os usuários curtam o perfil de outros usuários, e se ambos curtirem um ao outro, haverá um match que possibilitará aos usuários envolvidos trocarem mensagens.
 
-As questões de pesquisa que se pretende responder com este teste são:
+Será aplicado um teste em Escala Likert de 5 pontos, onde 1 representa "Discordo Totalmente" e 5 representa "Concordo Totalmente"
 
-- Quão fácil é para os usuários se cadastrarem e acessarem a aplicação?
-- Quão intuitiva é a interface da aplicação e quão bem ela atende às expectativas dos usuários?
-- Quão satisfeitos estão os usuários com as funcionalidades da aplicação, tais como o sistema de likes, matches e mensagens, e a opção de eventos?
-- Quais são os principais problemas de usabilidade que os usuários enfrentam ao usar a aplicação e como eles podem ser resolvidos?
+- As questões de pesquisa que se pretende responder com este teste são:
 
-## Objetivos
+- A navegação na aplicação é intuitiva e fácil de entender?
 
-Os objetivos específicos e mensuráveis deste teste são:
+- A interface da aplicação é visualmente agradável e organizada?
 
-- Medir o tempo de conclusão da tarefa, a taxa de sucesso e a satisfação do usuário para cada uma das seguintes tarefas:
+- A aplicação responde de forma rápida às minhas ações e comandos?
 
-  1. Cadastrar-se na aplicação usando um e-mail válido e uma senha.
-  2. Acessar a aplicação usando o e-mail e a senha cadastrados.
-  3. Editar o perfil pessoal, incluindo nome, idade, gênero, interesses e foto.
-  4. Navegar pelos perfis dos outros usuários, curtir ou dar super love em cada um deles.
-  5. Verificar se houve algum match com os usuários que deram like.
-  6. Enviar uma mensagem para um usuário que deu match.
-  7. Visualizar as mensagens recebidas dos usuários que deram match.
-  8. Denunciar uma mensagem inadequada enviada por outro usuário.
-  9. Desfazer um match, bloqueando ou não o usuário.
-  10. Realizar uma denúncia de perfil inadequado.
-  11. Cadastrar um evento, incluindo nome, data, hora, local e descrição.
-  12. Confirmar presença em um evento criado por outro usuário.
-  13. Entrar na aba do evento e ver os perfis dos usuários que confirmaram presença.
-  14. Coletar feedback qualitativo dos usuários sobre a aplicação, tais como comentários, sugestões, elogios e críticas.
+- Eu encontro facilmente as funcionalidades que preciso na aplicação?
 
-## Tarefas
+- A aplicação fornece feedback claro e informativo sobre minhas ações?
 
-As tarefas que os participantes serão solicitados a realizar com a aplicação são:
 
-**Tarefa 1: Cadastrar-se na aplicação usando um e-mail válido e uma senha.**
-*CENÁRIO*: Você quer usar a aplicação Love Match para conhecer pessoas novas que têm interesses em comum com você. Para isso, você precisa se cadastrar na aplicação usando um e-mail válido e uma senha.
+## Casos de Teste
 
-**Tarefa 2: Acessar a aplicação usando o e-mail e a senha cadastrados.**
-*CENÁRIO*: Você já se cadastrou na aplicação Love Match usando um e-mail válido e uma senha. Agora você quer acessar a aplicação para ver os perfis dos outros usuários.
+| **Caso de Teste** 	| CT-11 - Publicação Online
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-001: A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku).
+| **Objetivo do Teste** 	| Verificar se a aplicação está acessível publicamente na Internet através dos ambientes especificados.
+| **Passos** 	           | 1. Acessar a plataforma a partir de um navegador web.
+                        | 2. Verificar se a plataforma está disponível nos ambientes mencionados (Repl.it, GitHub Pages, Heroku).
+| **Critério de Êxito**  | A aplicação está acessível publicamente na Internet através dos ambientes especificados.
 
-**Tarefa 3: Editar o perfil pessoal, incluindo nome, idade, gênero, interesses e foto.**
-*CENÁRIO*: Você acessou a aplicação Love Match e quer editar o seu perfil pessoal para mostrar quem você é e quais são os seus interesses.
+| **Caso de Teste** 	| CT-12 - Responsividade
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-002: A aplicação deverá ser responsiva permitindo a visualização em diferentes telas de forma adequada.
+| **Objetivo do Teste** 	| Verificar se a aplicação é responsiva e se pode ser visualizada de forma adequada em diferentes telas.
+| **Passos** 	           | 1. Acessar a plataforma a partir de um celular.
+                        | 2. Acessar a plataforma a partir de um tablet.
+                        | 3. Acessar a plataforma a partir de um computador.
+| **Critério de Êxito**  | A aplicação é responsiva em todas as telas testadas, incluindo celular, tablet e computador.
 
-**Tarefa 4: Navegar pelos perfis dos outros usuários curtindo, ignorando ou dando super love em cada um deles.**
-*CENÁRIO*: Você editou o seu perfil pessoal na aplicação Love Match e quer ver os perfis dos outros usuários que têm interesses em comum com você. Você pode curtir, ignorar ou dar super love em cada perfil que você vê na aplicação. Se você der like em um perfil que também deu like em você, haverá um match e você poderá trocar mensagens com essa pessoa. Se você der super love a pessoa que recebeu saberá de seu interesse nela quando passar por seu perfil.
+| **Caso de Teste** 	| CT-13 - Contraste de Tela
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-003: A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade.
+| **Objetivo do Teste** 	| Avaliar se o contraste entre os elementos da tela é adequado para usuários com deficiências visuais.
+| **Passos** 	           | 1. Examinar o contraste entre os elementos da tela.
+                        | 2. Verificar se o contraste é suficiente para facilitar a leitura e a compreensão do conteúdo.
+| **Critério de Êxito**  | O contraste entre os elementos da tela atende aos padrões de acessibilidade e é adequado para usuários com deficiências visuais.
 
-**Tarefa 5: Verificar se houve algum match com os usuários que deram like.**
-*CENÁRIO*: Você navegou pelos perfis dos outros usuários na aplicação Love Match e deu like em alguns deles. Você quer saber se houve algum match com os usuários que você deu like.
+| **Caso de Teste** 	| CT-14 - Compatibilidade de Navegadores
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-004: A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
+| **Objetivo do Teste** 	| Verificar se a aplicação funciona corretamente nos principais navegadores do mercado.
+| **Passos** 	           | 1. Testar a plataforma no Google Chrome.
+                        | 2. Testar a plataforma no Mozilla Firefox.
+                        | 3. Testar a plataforma no Microsoft Edge.
+| **Critério de Êxito**  | A plataforma funciona corretamente e de forma consistente nos principais navegadores, sem diferenças significativas de usabilidade.
 
-**Tarefa 6: Enviar uma mensagem para um usuário que deu match.**
-*CENÁRIO*: Você verificou se houve algum match com os usuários que você deu like na aplicação Love Match e viu que houve um match com um usuário que chamou a sua atenção. Você quer enviar uma mensagem para esse usuário para iniciar uma conversa.
+| **Caso de Teste** 	| CT-15 - Validação de Cadastro
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-005: A aplicação não permite o recebimento de cadastros de usuários com dados necessários em branco.
+| **Objetivo do Teste** 	| Verificar se a aplicação impede o cadastro de usuários com campos obrigatórios em branco.
+| **Passos** 	           | 1. Tentar cadastrar um usuário com campos obrigatórios em branco.
+                        | 2. Verificar se a aplicação exibe uma mensagem de erro apropriada.
+| **Critério de Êxito**  | A aplicação impede o cadastro de usuários com campos obrigatórios em branco e exibe uma mensagem de erro adequada.
 
-**Tarefa 7: Visualizar as mensagens recebidas dos usuários que deram match.**
-*CENÁRIO*: Você enviou uma mensagem para um usuário que deu match com você na aplicação Love Match e quer ver se ele respondeu. Você também quer ver se recebeu alguma mensagem de outros usuários que deram match com você.
+| **Caso de Teste** 	| CT-16 - Mensagem de Erro de Cadastro
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-006: A aplicação deverá informar o erro de cadastro e login para o usuário caso os dados inseridos não estejam no banco de dados.
+| **Objetivo do Teste** 	| Verificar se a aplicação exibe mensagens de erro adequadas quando ocorre um erro de cadastro ou login.
+| **Passos** 	           | 1. Tentar cadastrar um usuário com dados incorretos.
+                        | 2. Tentar fazer login com dados incorretos.
+                        | 3. Verificar se a aplicação exibe mensagens de erro apropriadas.
+| **Critério de Êxito**  | A aplicação exibe mensagens de erro adequadas quando ocorre um erro de cadastro ou login.
 
-**Tarefa 8: Denunciar uma mensagem inadequada enviada por outro usuário.**
-*CENÁRIO*: Você recebeu uma mensagem ofensiva e/ou inadequada de outro usuário e quer enviar para a equipe de moderação visualizar pois acredita que fere os termos de uso da aplicação.
+| **Caso de Teste** 	| CT-17 - Backup em Nuvem
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-007: A aplicação deverá realizar backup dos dados principais de cadastros dos clientes para um banco de dados em nuvem.
+| **Objetivo do Teste** 	| Verificar se a aplicação realiza com sucesso o backup dos dados principais de cadastros dos clientes em um banco de dados em nuvem.
+| **Passos** 	           | 1. Realizar cadastro de clientes.
+                        | 2. Verificar se os dados são armazenados em um banco de dados em nuvem.
+| **Critério de Êxito**  | A aplicação realiza com sucesso o backup dos dados principais de cadastros dos clientes em um banco de dados em nuvem.
 
-**Tarefa 9: Desfazer um match, bloqueando ou não o usuário.**
-*CENÁRIO*: Você deu match com um usuário, mas acabou se arrependendo e quer encerrar a conversa com esse usuário, bloqueando ou não ele. Caso você opte por apenas desfazer o match, um novo match poderá ocorrer no futuro, caso opte por bloquear você nunca mais verá este usuário no Love Match.
+| **Caso de Teste** 	| CT-18 - Tecnologias Utilizadas
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| **Requisito Associado**| RNF-008: A aplicação será desenvolvida através das linguagens C#, .NET e do banco de dados SQL.
+| **Objetivo do Teste** 	| Verificar se a aplicação foi desenvolvida usando as tecnologias especificadas.
+| **Passos** 	           | 1. Verificar as tecnologias utilizadas no desenvolvimento da aplicação.
+| **Critério de Êxito**  | A aplicação foi desenvolvida utilizando as linguagens C#, .NET e o banco de dados SQL, conforme especificado.
 
-**Tarefa 10: Realizar uma denúncia de perfil inadequado.**
-*CENÁRIO*: Ao navegar pelos perfil você viu um perfil com fotos inadequadas ou qualquer outra coisa que possa ser considerava ofensiva e que você acredite que fere os termos de uso da plataforma, realize uma denúncia do perfil para que a equipe de moderação tome as providências cabíveis.
-
-**Tarefa 11: Cadastrar um evento, incluindo nome, data, hora, local e descrição.**
-*CENÁRIO*: Você quer usar a aplicação Love Match para conhecer pessoas novas que têm interesses em comum com você em um evento presencial que está organizando. Para isso, você precisa cadastrar um evento na aplicação, incluindo nome, data, hora, local e descrição.
-
-**Tarefa 12: Confirmar presença em um evento criado por outro usuário.**
-*CENÁRIO*: Você viu na aplicação Love Match que há um evento criado por outro usuário que te interessa. Você quer confirmar a sua presença nesse evento para poder ver os perfis dos outros usuários que também vão ao evento.
-
-**Tarefa 13: Entrar na aba do evento e ver os perfis dos usuários que confirmaram presença.**
-*CENÁRIO*: Você confirmou a sua presença em um evento na aplicação Love Match e quer ver os perfis dos outros usuários que também confirmaram presença. Você pode curtir, ignorar ou dar super love nos perfis que você vê. Se você der like em um perfil que também deu like em você, haverá um match e você poderá trocar mensagens com essa pessoa. Se você der super love a pessoa que recebeu saberá de seu interesse nela quando passar por seu perfil.
 
 ## Participantes
 
@@ -87,33 +100,3 @@ Os critérios de seleção e recrutamento dos participantes são:
 - Possuir computador com câmera e acesso a internet (para o caso do teste ser realizado remotamente via Microsoft Teams)
 
 O número de participantes será de 13 pessoas, sendo 5 homens e 5 mulheres selecionados com base nos critérios acima, com diferentes níveis de escolaridade e profissões e 3 pessoas da equipe Love Match, sendo elas um moderadora que irá comandar o teste e dois observadores.
-
-## Recursos Necessários
-
-Os critérios de seleção e recrutamento dos participantes são:
-
-- Computadores ou dispositivos com acesso à Internet para os participantes.
-- Acesso à aplicação web "Love Match".
-- Software de gravação de tela (se necessário).
-- Questionários de satisfação.
-- Espaço de teste configurado com acesso à Internet.
-- Licença do Microsoft Teams que permita a gravação das reuniões (Para o caso do teste ser realizado virtualmente).
-
-## Procedimentos
-
-Os passos que serão seguidos antes, durante e depois do teste são:
-
-### Antes do teste:
-
-- Recrutar os participantes de acordo com os critérios estabelecidos.
-- Enviar um convite por e-mail aos participantes selecionados, informando o objetivo, a duração e o local do teste, bem como o incentivo oferecido (por exemplo, um vale-presente).
-- Preparar o ambiente do teste, garantindo que haja uma conexão estável à internet, um computador com o navegador web instalado e a aplicação Love Match aberta, um gravador de áudio e vídeo, um cronômetro e um formulário de consentimento informado.
-
-### Durante o teste:
-
-- Receber os participantes e apresentar o moderador do teste.
-- Pedir aos participantes que leiam e assinem o formulário de consentimento informado, explicando os seus direitos e deveres como voluntários.
-- Explicar aos participantes o objetivo e o procedimento do teste, enfatizando que o foco é avaliar a aplicação e não o seu desempenho.
-- Pedir aos participantes que realizem as tarefas propostas na ordem apresentada, solicitando que pensem em voz alta enquanto executam as tarefas.
-- Registrar o tempo de conclusão da tarefa, a taxa de sucesso e a satisfação do usuário para cada tarefa, usando o cronômetro, o gravador de áudio e vídeo e uma escala Likert de 5 pontos.
-- Observar os comportamentos, as expressões faciais e os comentários dos participantes durante o teste, anotando as dificuldades, as facilidades e as sugestões encontradas.
