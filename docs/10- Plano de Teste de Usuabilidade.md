@@ -32,51 +32,42 @@ Será aplicado um teste em Escala Likert de 5 pontos, onde 1 representa "Discord
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-002: A aplicação deverá ser responsiva permitindo a visualização em diferentes telas de forma adequada.
 | **Objetivo do Teste** 	| Verificar se a aplicação é responsiva e se pode ser visualizada de forma adequada em diferentes telas.
-| **Passos** 	           | 1. Acessar a plataforma a partir de um celular.
-                        | 2. Acessar a plataforma a partir de um tablet.
-                        | 3. Acessar a plataforma a partir de um computador.
+| **Passos** 	           | 1. Acessar a plataforma a partir de um celular. <br> 2. Acessar a plataforma a partir de um tablet.<br> 3. Acessar a plataforma a partir de um computador.
 | **Critério de Êxito**  | A aplicação é responsiva em todas as telas testadas, incluindo celular, tablet e computador.
 
 | **Caso de Teste** 	| CT-13 - Contraste de Tela
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-003: A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade.
 | **Objetivo do Teste** 	| Avaliar se o contraste entre os elementos da tela é adequado para usuários com deficiências visuais.
-| **Passos** 	           | 1. Examinar o contraste entre os elementos da tela.
-                        | 2. Verificar se o contraste é suficiente para facilitar a leitura e a compreensão do conteúdo.
+| **Passos** 	           | 1. Examinar o contraste entre os elementos da tela.<br> 2. Verificar se o contraste é suficiente para facilitar a leitura e a compreensão do conteúdo.
 | **Critério de Êxito**  | O contraste entre os elementos da tela atende aos padrões de acessibilidade e é adequado para usuários com deficiências visuais.
 
 | **Caso de Teste** 	| CT-14 - Compatibilidade de Navegadores
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-004: A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge).
 | **Objetivo do Teste** 	| Verificar se a aplicação funciona corretamente nos principais navegadores do mercado.
-| **Passos** 	           | 1. Testar a plataforma no Google Chrome.
-                        | 2. Testar a plataforma no Mozilla Firefox.
-                        | 3. Testar a plataforma no Microsoft Edge.
+| **Passos** 	           | 1. Testar a plataforma no Google Chrome.<br> 2. Testar a plataforma no Mozilla Firefox.<br> 3. Testar a plataforma no Microsoft Edge.
 | **Critério de Êxito**  | A plataforma funciona corretamente e de forma consistente nos principais navegadores, sem diferenças significativas de usabilidade.
 
 | **Caso de Teste** 	| CT-15 - Validação de Cadastro
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-005: A aplicação não permite o recebimento de cadastros de usuários com dados necessários em branco.
 | **Objetivo do Teste** 	| Verificar se a aplicação impede o cadastro de usuários com campos obrigatórios em branco.
-| **Passos** 	           | 1. Tentar cadastrar um usuário com campos obrigatórios em branco.
-                        | 2. Verificar se a aplicação exibe uma mensagem de erro apropriada.
+| **Passos** 	           | 1. Tentar cadastrar um usuário com campos obrigatórios em branco.<br> 2. Verificar se a aplicação exibe uma mensagem de erro apropriada.
 | **Critério de Êxito**  | A aplicação impede o cadastro de usuários com campos obrigatórios em branco e exibe uma mensagem de erro adequada.
 
 | **Caso de Teste** 	| CT-16 - Mensagem de Erro de Cadastro
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-006: A aplicação deverá informar o erro de cadastro e login para o usuário caso os dados inseridos não estejam no banco de dados.
 | **Objetivo do Teste** 	| Verificar se a aplicação exibe mensagens de erro adequadas quando ocorre um erro de cadastro ou login.
-| **Passos** 	           | 1. Tentar cadastrar um usuário com dados incorretos.
-                        | 2. Tentar fazer login com dados incorretos.
-                        | 3. Verificar se a aplicação exibe mensagens de erro apropriadas.
+| **Passos** 	           | 1. Tentar cadastrar um usuário com dados incorretos. <br> 2. Tentar fazer login com dados incorretos. <br> 3. Verificar se a aplicação exibe mensagens de erro apropriadas.
 | **Critério de Êxito**  | A aplicação exibe mensagens de erro adequadas quando ocorre um erro de cadastro ou login.
 
 | **Caso de Teste** 	| CT-17 - Backup em Nuvem
 |--------------------|-----------------------------------------------------------------------------------------------------|
 | **Requisito Associado**| RNF-007: A aplicação deverá realizar backup dos dados principais de cadastros dos clientes para um banco de dados em nuvem.
 | **Objetivo do Teste** 	| Verificar se a aplicação realiza com sucesso o backup dos dados principais de cadastros dos clientes em um banco de dados em nuvem.
-| **Passos** 	           | 1. Realizar cadastro de clientes.
-                        | 2. Verificar se os dados são armazenados em um banco de dados em nuvem.
+| **Passos** 	           | 1. Realizar cadastro de clientes.<br> 2. Verificar se os dados são armazenados em um banco de dados em nuvem.
 | **Critério de Êxito**  | A aplicação realiza com sucesso o backup dos dados principais de cadastros dos clientes em um banco de dados em nuvem.
 
 | **Caso de Teste** 	| CT-18 - Tecnologias Utilizadas
