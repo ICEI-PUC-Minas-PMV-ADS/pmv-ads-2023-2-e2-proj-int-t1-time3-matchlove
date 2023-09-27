@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/lovelogo" href="assets/img/Menu/lovelogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveMatch</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+    <div class="body">
+      <!-- nav -->
+      <div id="nav" class="nav">
+        <div class="main__menu">
+          <img class="nav__logo" src="assets/img/Menu/lovelogo.png" alt="" />
+          <ul class="select_menu">
+            <li class="components_li"><a href="#">Inicio</a></li>
+            <li class="components_li"><a href="#">Perfil</a></li>
+            <li class="components_li"><a href="#">Por perto</a></li>
+            <li class="components_li"><a href="#">Filtros</a></li>
+            <li class="components_li"><a href="#">Reviews</a></li>
+            <li class="components_li"><a href="#">Minha Lista</a></li>
+          </ul>
+        </div>
+
+        <img class="nav__avatar" src="assets/img/Menu/avatar.png" alt="" />
+      </div>
+
+    <!-- Script para quando a pagina estiver "scroll down" -->
+      <script>
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+          if (window.scrollY >= 100) {
+            nav.classList.add('nav__black');
+          } else {
+            nav.classList.remove('nav__black');
+          }
+        });
+      </script>
+
+      <!-- Footer -->
+    <div class="main_footer">
+        <ul class="list_of_footers">
+          <li class="footer_list"><a href="#">Avisos legais</a></li>
+          <li class="footer_list"><a href="#">Termos de Uso</a></li>
+          <li class="footer_list"><a href="#">Entre em contato</a></li>
+        </ul>
+      </div>
+</body>
+</html>
