@@ -1,0 +1,80 @@
+/* Zerando margens */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fonte arial e fundo preto */
+  .body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+  }
+  
+  /* Configuração do tamanho da fonte */
+  .nav__logo {
+    width: 100px;
+    object-fit: contain;
+  }
+  
+  /* Configuração do tamanho do menu */
+  .select_menu{
+    width: 650px;
+    object-fit: contain;
+  }
+  
+  /* Configuração do estilo da lista */
+  .components_li{
+    display: inline-flex;
+  }
+  
+  /* Configuraçções da lista */
+  .components_li a{
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Configuração de quando a lista for coberta pelo mouse */
+  
+  .components_li a:hover{
+    background: rgb(246, 246, 246);
+    color: #333;
+  }
+
+  /* Configuranção do menu */
+.nav {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    display: flex;
+    background-color: transparent;
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.9) 10%,transparent);
+    justify-content: space-between; 
+    padding: 20px; 
+    z-index: 1; 
+    transition-timing-function: ease-in; 
+    transition: all 0.5s;
+  }
+  
+  /* Configuração do espaçamento para o menu */
+  .main__menu{
+    display: flex;
+  }
+
+  /* Comfiguração da animação e cor dos botões quando sobrepostos */
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+  }
+  
+  /* Configuração que posiciona o banner e aplica um fade out na imagem que vai ficando
+  com a cor do conteúdo que vem a seguir */
+  .banner--fadeBottom {
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+  }
+  
