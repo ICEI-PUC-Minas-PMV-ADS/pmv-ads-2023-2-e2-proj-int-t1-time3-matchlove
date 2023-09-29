@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\PUC\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\.github\workflows\matchloves.yml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\PUC\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove\Properties\PublishProfiles\matchloves - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
