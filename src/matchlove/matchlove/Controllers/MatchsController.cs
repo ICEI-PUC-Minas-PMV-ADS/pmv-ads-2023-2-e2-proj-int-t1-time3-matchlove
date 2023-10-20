@@ -13,7 +13,7 @@ namespace matchlove.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var dados = _context.Match.ToList();
+            var dados =  _context.Match.ToList();
             return View();
         }
     }
