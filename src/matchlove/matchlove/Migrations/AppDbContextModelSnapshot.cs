@@ -21,46 +21,6 @@ namespace matchlove.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-            modelBuilder.Entity("matchlove.Models.Login", b =>
-            {
-                b.Property<int>("Id")
-                    .ValueGeneratedOnAdd()
-                    .HasColumnType("int");
-                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                b.Property<string>("Email")
-                    .IsRequired()
-                    .HasColumnType("nvarchar(max)");
-
-                b.Property<int>("PessoaId")
-                    .HasColumnType("int");
-
-                b.Property<string>("Senha")
-                    .IsRequired()
-                    .HasColumnType("nvarchar(max)");
-
-                b.HasKey("Id");
-
-                b.HasIndex("PessoaId")
-                    .IsUnique();
-
-                b.ToTable("Login");
-            });
-            modelBuilder.Entity("matchlove.Models.Curtida", b =>
-            {
-                b.Property<bool>("DeuMatch")
-                    .HasColumnType("bit");
-
-                b.Property<int>("IdDestinatario")
-                    .HasColumnType("int");
-
-                b.Property<int>("IdRemetente")
-                    .HasColumnType("int");
-
-                b.HasKey("Id");
-
-                b.ToTable("Curtidas");
-            });
 
             modelBuilder.Entity("matchlove.Models.Denuncia", b =>
                 {
@@ -91,6 +51,55 @@ namespace matchlove.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Denuncia");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Info", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PessoaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoInfo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Infos");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Login", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PessoaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PessoaId")
+                        .IsUnique();
+
+                    b.ToTable("Login");
                 });
 
             modelBuilder.Entity("matchlove.Models.Match", b =>
@@ -134,6 +143,9 @@ namespace matchlove.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FotoPerfil")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Genero")
                         .HasColumnType("int");
 
@@ -174,22 +186,21 @@ namespace matchlove.Migrations
 
             modelBuilder.Entity("matchlove.Models.Pessoa", b =>
                 {
-                    b.Navigation("Login");
-
-                    modelBuilder.Entity("matchlove.Models.Pessoa", b =>
-                        {
-                            b.HasOne("matchlove.Models.Denuncia", null)
-                                .WithMany("Pessoas")
-                                .HasForeignKey("DenunciaId");
-                        });
-
-                    modelBuilder.Entity("matchlove.Models.Denuncia", b =>
-                        {
-                            b.Navigation("Pessoas");
-
-                        });
-#pragma warning restore 612, 618
+                    b.HasOne("matchlove.Models.Denuncia", null)
+                        .WithMany("Pessoas")
+                        .HasForeignKey("DenunciaId");
                 });
+
+            modelBuilder.Entity("matchlove.Models.Denuncia", b =>
+                {
+                    b.Navigation("Pessoas");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Pessoa", b =>
+                {
+                    b.Navigation("Login");
+                });
+#pragma warning restore 612, 618
         }
     }
 }

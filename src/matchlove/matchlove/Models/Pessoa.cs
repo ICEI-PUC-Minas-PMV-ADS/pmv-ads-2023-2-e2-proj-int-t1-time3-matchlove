@@ -16,6 +16,7 @@ namespace matchlove.Models
         public TipoDescobertas OrientacaoSexual { get; set; }
         [Required(ErrorMessage = "A data de nascimento é obrigatório!")]
         public DateTime? DataNascimento { get; set; }
+        public string FotoPerfil {  get; set; }
 
 
         
@@ -33,6 +34,9 @@ namespace matchlove.Models
 
         [Required(ErrorMessage = "Obrigatório Cadastrar Perfil")]
         public TipoPerfils Perfil { get; set; }
-     }
+        // Propriedade de navegação para Infos
+        public virtual ICollection<Info> Infos { get; set; }
+
+    }
 
 }   

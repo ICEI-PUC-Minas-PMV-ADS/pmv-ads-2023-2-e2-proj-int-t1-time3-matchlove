@@ -12,8 +12,8 @@ using matchlove.Models;
 namespace matchlove.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231019143659_M03-AddTableCurtidas")]
-    partial class M03AddTableCurtidas
+    [Migration("20231021195323_M07-AddTableInfos")]
+    partial class M07AddTableInfos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,28 +23,6 @@ namespace matchlove.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
-
-            modelBuilder.Entity("matchlove.Models.Curtida", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<bool>("DeuMatch")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("IdDestinatario")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdRemetente")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Curtidas");
-                });
 
             modelBuilder.Entity("matchlove.Models.Denuncia", b =>
                 {
@@ -75,6 +53,55 @@ namespace matchlove.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Denuncia");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Info", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PessoaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoInfo")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Infos");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Login", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PessoaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PessoaId")
+                        .IsUnique();
+
+                    b.ToTable("Login");
                 });
 
             modelBuilder.Entity("matchlove.Models.Match", b =>
@@ -118,6 +145,9 @@ namespace matchlove.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FotoPerfil")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Genero")
                         .HasColumnType("int");
 
@@ -145,6 +175,17 @@ namespace matchlove.Migrations
                     b.ToTable("Pessoas");
                 });
 
+            modelBuilder.Entity("matchlove.Models.Login", b =>
+                {
+                    b.HasOne("matchlove.Models.Pessoa", "Pessoa")
+                        .WithOne("Login")
+                        .HasForeignKey("matchlove.Models.Login", "PessoaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pessoa");
+                });
+
             modelBuilder.Entity("matchlove.Models.Pessoa", b =>
                 {
                     b.HasOne("matchlove.Models.Denuncia", null)
@@ -155,6 +196,11 @@ namespace matchlove.Migrations
             modelBuilder.Entity("matchlove.Models.Denuncia", b =>
                 {
                     b.Navigation("Pessoas");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Pessoa", b =>
+                {
+                    b.Navigation("Login");
                 });
 #pragma warning restore 612, 618
         }

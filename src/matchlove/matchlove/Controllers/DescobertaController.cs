@@ -2,20 +2,19 @@
 using matchlove.Models;
 
 namespace matchlove.Controllers
-
 {
-    public class CurtidasController : Controller
+    public class DescobertaController : Controller
     {
         private readonly AppDbContext _context;
-        public CurtidasController(AppDbContext context)
+        public DescobertaController(AppDbContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
-        {
-            var dados = _context.Curtida.ToList();
-            return View();
+        { 
+            var dados = _context.Pessoas.ToList();
+            return View(dados);
         }
     }
 }
