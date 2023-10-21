@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+using matchlove.Enum;
 namespace matchlove.Models
 {
     [Table("Pessoas")]
@@ -11,9 +11,9 @@ namespace matchlove.Models
         [Required(ErrorMessage = "O nome é obrigatório!")]
         public string Nome { get; set; }
         [Required(ErrorMessage = "O gênero é obrigatório!")]
-        public int Genero { get; set; }
+        public TipoGeneros Genero { get; set; }
         [Required(ErrorMessage = "A orientação sexual é obrigatório!")]
-        public int OrientacaoSexual { get; set; }
+        public TipoDescobertas OrientacaoSexual { get; set; }
         [Required(ErrorMessage = "A data de nascimento é obrigatório!")]
         public DateTime? DataNascimento { get; set; }
 
@@ -29,12 +29,7 @@ namespace matchlove.Models
         public int Telefone { get; set; }
 
         [Required(ErrorMessage = "Obrigatório Cadastrar Perfil")]
-        public Perfil Perfil { get; set; }
+        public TipoPerfils Perfil { get; set; }
      }
-    public enum Perfil
-    {
-        Admin,
-        User
 
-    }
 }   
