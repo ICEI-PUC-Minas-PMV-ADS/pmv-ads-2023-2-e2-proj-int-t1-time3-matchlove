@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\matchlove.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marcela\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\PUCMINAS\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj": {}
-  },
-  "projects": {
-    "C:\\PUCMINAS\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\PUCMINAS\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
-        "projectName": "matchlove",
-        "projectPath": "C:\\PUCMINAS\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
-        "packagesPath": "C:\\Users\\jvtub\\.nuget\\packages\\",
-        "outputPath": "C:\\PUCMINAS\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\jvtub\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 73aae586d67bb84c5e649d07c7647326d65710e7
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -104,11 +86,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> 73aae586d67bb84c5e649d07c7647326d65710e7
         }
       }
     }

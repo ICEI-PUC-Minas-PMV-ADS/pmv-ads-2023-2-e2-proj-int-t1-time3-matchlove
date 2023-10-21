@@ -2,18 +2,9 @@
 
 namespace matchlove.Models
 {
-<<<<<<< HEAD
     public class AppDbContext : DbContext
-    {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){ }
-        public DbSet<Pessoa> Pessoas { get; set; }
-
-        public DbSet<Login> Login { get; set; }
-=======
-        
-        public class AppDbContext : DbContext
-        {
-        protected override void OnModelCreating(ModelBuilder builder)
+    {        
+            protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
         }
@@ -26,6 +17,7 @@ namespace matchlove.Models
             public DbSet<Curtida> Curtida { get; set; }
             public DbSet<Match> Match { get; set; }
             public DbSet<Denuncia> Denuncia { get; set; }
+            public DbSet<Login> Login { get; set; }
         }
->>>>>>> 73aae586d67bb84c5e649d07c7647326d65710e7
+
     }

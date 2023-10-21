@@ -33,13 +33,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
-<<<<<<< HEAD
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Login\Login.cshtml" />
-=======
->>>>>>> 73aae586d67bb84c5e649d07c7647326d65710e7
   </ItemGroup>
 
 </Project>
