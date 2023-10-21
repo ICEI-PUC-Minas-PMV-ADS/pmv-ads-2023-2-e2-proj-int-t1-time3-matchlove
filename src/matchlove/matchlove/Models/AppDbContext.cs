@@ -7,6 +7,11 @@ namespace matchlove.Models
             protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            builder.Entity<Info>()
+            .HasOne(i => i.Pessoa)
+            .WithMany(p => p.Infos)
+            .HasForeignKey(i => i.PessoaId)
+            .OnDelete(DeleteBehavior.Restrict);
         }
         public void ConfigureServices(IServiceCollection services)
         {
@@ -14,10 +19,10 @@ namespace matchlove.Models
         }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
             public DbSet<Pessoa> Pessoas { get; set; }
-            public DbSet<Curtida> Curtida { get; set; }
             public DbSet<Match> Match { get; set; }
             public DbSet<Denuncia> Denuncia { get; set; }
             public DbSet<Login> Login { get; set; }
+            public DbSet<Info> Info { get; set; }
         }
 
     }

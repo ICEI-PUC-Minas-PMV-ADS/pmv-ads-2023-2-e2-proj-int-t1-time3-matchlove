@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<matchlove.Models.Pessoa>
 @using NodaTime;
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "LoveMatch - Descoberta";
 }
 
-<h1>Index</h1>
+<h1>Descoberta</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -13,7 +13,13 @@
     <thead>
         <tr>
             <th>
+                Foto
+            </th>
+            <th>
                 Nome
+            </th>
+            <th>
+                Profissão
             </th>
             <th>
                 Gênero
@@ -33,11 +39,25 @@
             LocalDateTime dataAtual = LocalDateTime.FromDateTime(DateTime.Now);
             Period? diferenca = Period.Between(LocalDateTime.FromDateTime(item.DataNascimento.Value), dataAtual);
             int? idade = diferenca.Years;
+            
 
             <tr>
+                <td>
+                    @if(item.FotoPerfil!=null){
+                        <img src="data:image/jpeg;base64, @item.FotoPerfil" alt="Foto de @PrimeiroNome" style="width: 150px; height: 150px;" />
+                    }
+                    else
+                    {
+                        <h4>Usuário sem foto</h4>
+                    }
+
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => PrimeiroNome)
             </td>
+                <td>
+                    Prossião
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Genero)
             </td>

@@ -24,27 +24,7 @@ namespace matchlove.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("matchlove.Models.Curtida", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<bool>("DeuMatch")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("IdDestinatario")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdRemetente")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Curtidas");
-                });
 
             modelBuilder.Entity("matchlove.Models.Denuncia", b =>
                 {
