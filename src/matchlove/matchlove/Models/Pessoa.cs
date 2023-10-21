@@ -8,7 +8,7 @@ namespace matchlove.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required(ErrorMessage ="O nome é obrigatório!")]
+        [Required(ErrorMessage = "O nome é obrigatório!")]
         public string Nome { get; set; }
         [Required(ErrorMessage = "O gênero é obrigatório!")]
         public int Genero { get; set; }
@@ -17,7 +17,29 @@ namespace matchlove.Models
         [Required(ErrorMessage = "A data de nascimento é obrigatório!")]
         public DateTime? DataNascimento { get; set; }
 
+<<<<<<< HEAD
         
         public Login Login { get; set; }
+=======
+        [Required(ErrorMessage = "Obrigatório informar o e-mail!")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "Informe um e-mail valido")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Obrigatório informar senha!")]
+        [DataType(DataType.Password)]
+        public string Senha { get; set; }
+
+        [Required(ErrorMessage = "Obrigatório Telefone")]
+        public int Telefone { get; set; }
+
+        [Required(ErrorMessage = "Obrigatório Cadastrar Perfil")]
+        public Perfil Perfil { get; set; }
+>>>>>>> 73aae586d67bb84c5e649d07c7647326d65710e7
      }
-}
+    public enum Perfil
+    {
+        Admin,
+        User
+
+    }
+}   

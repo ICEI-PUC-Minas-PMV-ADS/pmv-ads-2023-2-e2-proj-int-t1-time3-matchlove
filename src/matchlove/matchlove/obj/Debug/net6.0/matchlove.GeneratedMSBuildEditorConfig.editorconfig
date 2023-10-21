@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Curtidas/curtidas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VydGlkYXNcY3VydGlkYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Denuncias/denuncias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVudW5jaWFzXGRlbnVuY2lhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Matchs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Pessoas/pessoas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xwZXNzb2FzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Shared/Error.cshtml]
