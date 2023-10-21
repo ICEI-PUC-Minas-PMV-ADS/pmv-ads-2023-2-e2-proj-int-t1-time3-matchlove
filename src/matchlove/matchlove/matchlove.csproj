@@ -9,6 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Login\**" />
+    <Compile Remove="Views\NovaPasta1\**" />
+    <Compile Remove="Views\NovaPasta\**" />
+    <Content Remove="Views\Login\**" />
+    <Content Remove="Views\NovaPasta1\**" />
+    <Content Remove="Views\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Login\**" />
+    <EmbeddedResource Remove="Views\NovaPasta1\**" />
+    <EmbeddedResource Remove="Views\NovaPasta\**" />
+    <None Remove="Views\Login\**" />
+    <None Remove="Views\NovaPasta1\**" />
+    <None Remove="Views\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.22" />
@@ -17,6 +32,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Login\Login.cshtml" />
   </ItemGroup>
 
 </Project>

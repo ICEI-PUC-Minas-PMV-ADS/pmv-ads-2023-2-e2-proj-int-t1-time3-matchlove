@@ -16,5 +16,8 @@ namespace matchlove.Models
         public int OrientacaoSexual { get; set; }
         [Required(ErrorMessage = "A data de nascimento é obrigatório!")]
         public DateTime? DataNascimento { get; set; }
+
+        
+        public Login Login { get; set; }
      }
 }

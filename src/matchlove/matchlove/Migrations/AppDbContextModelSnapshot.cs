@@ -22,6 +22,33 @@ namespace matchlove.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("matchlove.Models.Login", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PessoaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PessoaId")
+                        .IsUnique();
+
+                    b.ToTable("Login");
+                });
+
             modelBuilder.Entity("matchlove.Models.Pessoa", b =>
                 {
                     b.Property<int>("Id")
@@ -47,6 +74,22 @@ namespace matchlove.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Pessoas");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Login", b =>
+                {
+                    b.HasOne("matchlove.Models.Pessoa", "Pessoa")
+                        .WithOne("Login")
+                        .HasForeignKey("matchlove.Models.Login", "PessoaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pessoa");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Pessoa", b =>
+                {
+                    b.Navigation("Login");
                 });
 #pragma warning restore 612, 618
         }
