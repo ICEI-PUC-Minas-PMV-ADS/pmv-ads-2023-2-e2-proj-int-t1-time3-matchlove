@@ -4,16 +4,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace matchlove.Controllers
 {
-    public class LoginController : Controller
+    public class LoginsController : Controller
     {
 
         private readonly AppDbContext _context;
-        public LoginController(AppDbContext context)
+        public LoginsController(AppDbContext context)
         {
             _context = context;
         }
 
-        public async Task<IActionResult> Login()
+        public async Task<IActionResult> Index()
         {
             var dados = await _context.Login.ToListAsync();
 
