@@ -1,0 +1,58 @@
+﻿@model IEnumerable<matchlove.Models.Pessoa>
+@using NodaTime;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome
+            </th>
+            <th>
+                Gênero
+            </th>
+            <th>
+                Procurando
+            </th>
+            <th>
+                Idade
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            String[] Nomes = item.Nome.Split(' ');
+            String PrimeiroNome = Nomes[0];
+            LocalDateTime dataAtual = LocalDateTime.FromDateTime(DateTime.Now);
+            Period? diferenca = Period.Between(LocalDateTime.FromDateTime(item.DataNascimento.Value), dataAtual);
+            int? idade = diferenca.Years;
+
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => PrimeiroNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrientacaoSexual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => idade)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

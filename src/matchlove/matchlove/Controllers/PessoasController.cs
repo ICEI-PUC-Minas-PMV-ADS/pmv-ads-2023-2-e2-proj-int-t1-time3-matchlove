@@ -14,7 +14,7 @@ namespace matchlove.Controllers
         public async Task<IActionResult> Index()
         { 
             var dados = _context.Pessoas.ToList();
-            return View();
+            return View(dados);
         }
     }
 }
