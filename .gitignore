@@ -462,6 +462,8 @@ $RECYCLE.BIN/
 # User-specific files
 *.rsuser
 *.suo
+*.dll
+*.suo
 *.user
 *.userosscache
 *.sln.docstates
