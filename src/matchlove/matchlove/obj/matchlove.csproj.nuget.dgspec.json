@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj": {}
+    "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\matchlove.csproj": {}
   },
   "projects": {
-    "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj": {
+    "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\matchlove.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
+        "projectUniqueName": "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\matchlove.csproj",
         "projectName": "matchlove",
-        "projectPath": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
-        "packagesPath": "C:\\Users\\Vibe\\.nuget\\packages\\",
-        "outputPath": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\obj\\",
+        "projectPath": "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\matchlove.csproj",
+        "packagesPath": "C:\\Users\\Marcela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vibe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcela\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
