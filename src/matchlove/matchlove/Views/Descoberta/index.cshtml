@@ -3,8 +3,37 @@
 @{
     ViewData["Title"] = "LoveMatch - Descoberta";
 }
-
+<head>
+<link href="./css/heart.css" rel="stylesheet" />
+<script src="./js/script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O5oVMWSktQOp6b7In1Zl3/JiR5PYYoa2+rRdYGus+1Ft8Uod" crossorigin="anonymous">
+</head>
 <h1>Descoberta</h1>
+
+<form method="get">
+    <div>
+        <label for="idadeMin">Idade Mínima:</label>
+        <select id="idadeMin" name="idadeMin">
+            @for (int i = 18; i <= 80; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="idadeMax">Idade Máxima:</label>
+        <select id="idadeMax" name="idadeMax">
+            @for (int i = 18; i <= 80; i++)
+            {
+                <option value="@i">@i</option>
+            }
+            <option value="80+">+80</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Filtrar">
+    </div>
+</form>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -27,9 +56,7 @@
             <th>
                 Procurando
             </th>
-            <th>
-                Idade
-            </th>
+            <th>Like</th>
         </tr>
     </thead>
     <tbody>
@@ -39,8 +66,9 @@
             LocalDateTime dataAtual = LocalDateTime.FromDateTime(DateTime.Now);
             Period? diferenca = Period.Between(LocalDateTime.FromDateTime(item.DataNascimento.Value), dataAtual);
             int? idade = diferenca.Years;
-            
-
+            string profissao = item.Infos?
+            .FirstOrDefault(info => info.TipoInfo == matchlove.Enum.TipoInfo.profissao)?
+            .Descricao ?? "Não especificado";
             <tr>
                 <td>
                     @if(item.FotoPerfil!=null){
@@ -48,15 +76,20 @@
                     }
                     else
                     {
-                        <h4>Usuário sem foto</h4>
+                        <img src="https://cdn-icons-png.flaticon.com/512/1695/1695213.png" alt="O usuário não possuí foto" style="width: 150px; height: 150px;" />
+
                     }
 
                 </td>
-            <td>
-                @Html.DisplayFor(modelItem => PrimeiroNome)
+                <td style="text-align: left; vertical-align: middle;">
+
+                   <h1> @Html.DisplayFor(modelItem => PrimeiroNome), @Html.DisplayFor(modelItem => idade)</h1>
             </td>
                 <td>
-                    Prossião
+
+                        @Html.DisplayFor(modelItem => profissao)
+
+                    
                 </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Genero)
@@ -64,14 +97,22 @@
             <td>
                 @Html.DisplayFor(modelItem => item.OrientacaoSexual)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => idade)
-            </td>
-            <td>
+                <td>
+                    <span class="heart" id="heart" style="font-size=130px">
+                        &#x2764;
+                    </span>
+
+                    <script>
+                        document.getElementById("heart").addEventListener("click", function () {
+                            this.classList.toggle("active");
+                        });
+                    </script>
+                </td>
+       @*      <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+            </td> *@
         </tr>
 }
     </tbody>

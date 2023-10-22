@@ -38,6 +38,8 @@
 
   <ItemGroup>
     <None Include="Views\Logins\Index.cshtml" />
+    <None Include="wwwroot\css\heart.css" />
+    <None Include="wwwroot\js\script.js" />
   </ItemGroup>
 
 </Project>
