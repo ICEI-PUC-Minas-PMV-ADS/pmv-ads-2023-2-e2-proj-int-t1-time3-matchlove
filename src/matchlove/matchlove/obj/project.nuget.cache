@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uY0T6EgRZ4xE8nkoNcQlgZ0jst9uqxnqZCUwGp5Xjl1qHsAPXZgIGGd035aDbOuqbKW5bSIh1BDU1770vEinSg==",
+  "dgSpecHash": "fqRrTk+7H7fXLMUdCxnN1rgXASaQsj+vT9FzDurBO2UREHewCjyiRma5zxaygQAfAEegTQlxDsekN7jJb3PQow==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marcela\\Documents\\PROJETO_FACU\\src\\matchlove\\matchlove\\matchlove.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Marcela\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Marcela\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Marcela\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Marcela\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

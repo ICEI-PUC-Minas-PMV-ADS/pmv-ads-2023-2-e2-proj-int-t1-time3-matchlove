@@ -24,6 +24,7 @@ namespace matchlove.Controllers
             return View(await _context.Usuarios.ToListAsync());
         }
 
+        [AllowAnonymous]
         public IActionResult AccessDenied() 
         {
             return View();

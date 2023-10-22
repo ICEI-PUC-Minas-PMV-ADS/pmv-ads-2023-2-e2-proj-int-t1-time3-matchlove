@@ -12,7 +12,7 @@ using matchlove.Models;
 namespace matchlove.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231022002237_M08-AddTableUsuarios")]
+    [Migration("20231022192236_M08-AddTableUsuarios")]
     partial class M08AddTableUsuarios
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -55,6 +55,38 @@ namespace matchlove.Migrations
                     b.ToTable("Denuncia");
                 });
 
+            modelBuilder.Entity("matchlove.Models.Filme", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<string>("titulo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Filmes");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Hobby", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<string>("descricao")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Hobbies");
+                });
+
             modelBuilder.Entity("matchlove.Models.Info", b =>
                 {
                     b.Property<int>("Id")
@@ -66,6 +98,15 @@ namespace matchlove.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("FilmeId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("HobbyId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MusicaId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PessoaId")
                         .HasColumnType("int");
 
@@ -74,7 +115,20 @@ namespace matchlove.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PessoaId");
+                    b.HasIndex("FilmeId")
+                        .IsUnique()
+                        .HasFilter("[FilmeId] IS NOT NULL");
+
+                    b.HasIndex("HobbyId")
+                        .IsUnique()
+                        .HasFilter("[HobbyId] IS NOT NULL");
+
+                    b.HasIndex("MusicaId")
+                        .IsUnique()
+                        .HasFilter("[MusicaId] IS NOT NULL");
+
+                    b.HasIndex("PessoaId")
+                        .HasDatabaseName("IX_Infos_PessoaId_Custom");
 
                     b.ToTable("Infos");
                 });
@@ -126,6 +180,25 @@ namespace matchlove.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Match");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Musica", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<string>("artista")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("titulo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Musicas");
                 });
 
             modelBuilder.Entity("matchlove.Models.Pessoa", b =>
@@ -203,11 +276,29 @@ namespace matchlove.Migrations
 
             modelBuilder.Entity("matchlove.Models.Info", b =>
                 {
+                    b.HasOne("matchlove.Models.Filme", "Filme")
+                        .WithOne()
+                        .HasForeignKey("matchlove.Models.Info", "FilmeId");
+
+                    b.HasOne("matchlove.Models.Hobby", "Hobby")
+                        .WithOne()
+                        .HasForeignKey("matchlove.Models.Info", "HobbyId");
+
+                    b.HasOne("matchlove.Models.Musica", "Musica")
+                        .WithOne()
+                        .HasForeignKey("matchlove.Models.Info", "MusicaId");
+
                     b.HasOne("matchlove.Models.Pessoa", "Pessoa")
                         .WithMany("Infos")
                         .HasForeignKey("PessoaId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Filme");
+
+                    b.Navigation("Hobby");
+
+                    b.Navigation("Musica");
 
                     b.Navigation("Pessoa");
                 });
