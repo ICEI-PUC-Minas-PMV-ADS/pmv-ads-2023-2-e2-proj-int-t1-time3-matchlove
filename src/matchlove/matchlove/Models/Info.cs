@@ -12,7 +12,16 @@ namespace matchlove.Models
         [ForeignKey("PessoaId")]
         public int PessoaId { get; set; }
         public TipoInfo TipoInfo { get; set; }
-        public string Descricao { get; set; }
+        [ForeignKey("FilmeId")]
+        public int? FilmeId { get; set; }
+        [ForeignKey("MusicaId")]
+        public int? MusicaId { get; set; }
+        [ForeignKey("HobbyId")]
+        public int? HobbyId { get; set; }
+        public string? Descricao { get; set; }
         public virtual Pessoa Pessoa { get; set; }
+        public virtual Filme Filme { get; set; }
+        public virtual Musica Musica { get; set; }
+        public virtual Hobby Hobby { get; set; }
     }
 }

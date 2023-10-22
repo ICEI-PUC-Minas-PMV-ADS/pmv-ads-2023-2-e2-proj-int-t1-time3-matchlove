@@ -8,9 +8,19 @@
 <script src="./js/script.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O5oVMWSktQOp6b7In1Zl3/JiR5PYYoa2+rRdYGus+1Ft8Uod" crossorigin="anonymous">
 </head>
-<h1>Descoberta</h1>
-
+<h1>Descoberta </h1>
+<h4>Você está logado como @ViewBag.UsuarioMockado - MOCK</h4>
 <form method="get">
+    <div>
+        <label for="musica">Mock de Login:</label>
+        <select id="usuario" name="usuario">
+            <option>Selecione o Usuário</option>
+            @foreach (var usuario in Model)
+            {
+                <option value="@usuario.Id">@usuario.Nome</option>
+            }
+        </select> Funcionalidade para teste em desenvolvimento - O usuário mockado não é exibido na lista.
+    </div>
     <div>
         <label for="idadeMin">Idade Mínima:</label>
         <select id="idadeMin" name="idadeMin">
@@ -27,7 +37,47 @@
             {
                 <option value="@i">@i</option>
             }
-            <option value="80+">+80</option>
+            <option value="80+" selected>+80</option>
+        </select>
+    </div>
+    <div>
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="">Ambos</option>
+            <option value="Masculino">Homens</option>
+            <option value="Feminino">Mulheres</option>
+        </select>
+    </div>
+    <div>
+        <label for="filme">Filmes:</label>
+        <select id="filme" name="filme">
+            <option value="">Todos</option>
+            @foreach (var filme in ViewBag.Filmes)
+            {
+                <option value="@filme.id">@filme.titulo</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="hobby">Hobbies:</label>
+        <select id="hobby" name="hobby">
+            <option value="">Todos</option>
+            @foreach (var hobby in ViewBag.Hobbies)
+            {
+                <option value="@hobby.id">@hobby.descricao</option>
+            }
+        </select>
+    </div>
+
+    <div>
+        <label for="musica">Músicas:</label>
+        <select id="musica" name="musica">
+            <option value="">Todas</option>
+            @foreach (var musica in ViewBag.Musicas)
+            {
+                <option value="@musica.id">@musica.titulo (@musica.artista)</option>
+            }
         </select>
     </div>
     <div>
@@ -48,13 +98,22 @@
                 Nome
             </th>
             <th>
+                Sobre mim
+            </th>
+            <th>
                 Profissão
             </th>
             <th>
                 Gênero
             </th>
             <th>
-                Procurando
+                Músicas
+            </th>
+            <th>
+                Hobbies
+            </th>
+            <th>
+                Filmes
             </th>
             <th>Like</th>
         </tr>
@@ -69,6 +128,9 @@
             string profissao = item.Infos?
             .FirstOrDefault(info => info.TipoInfo == matchlove.Enum.TipoInfo.profissao)?
             .Descricao ?? "Não especificado";
+            string bio= item.Infos?
+            .FirstOrDefault(info => info.TipoInfo == matchlove.Enum.TipoInfo.bio)?
+            .Descricao ?? "Sem bio!";
             <tr>
                 <td>
                     @if(item.FotoPerfil!=null){
@@ -86,17 +148,50 @@
                    <h1> @Html.DisplayFor(modelItem => PrimeiroNome), @Html.DisplayFor(modelItem => idade)</h1>
             </td>
                 <td>
-
-                        @Html.DisplayFor(modelItem => profissao)
+                    @Html.DisplayFor(modelItem => bio)
+                        
 
                     
                 </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Genero)
+                    @Html.DisplayFor(modelItem => profissao)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OrientacaoSexual)
-            </td>
+                <td>
+                    @if (item.Genero == matchlove.Enum.TipoGeneros.Masculino)
+                    {
+                        <span>&#x1F468;</span> <!-- Emoji de homem -->
+                    }
+                    else if (item.Genero == matchlove.Enum.TipoGeneros.Feminino)
+                    {
+                        <span>&#x1F469;</span> <!-- Emoji de mulher -->
+                    }
+                    else
+                    {
+                        <span>&#x1F464;</span> <!-- Emoji neutro/outros -->
+                    }
+                </td>
+                <td>
+                    <ul>
+                        @foreach (var info in item.Infos.Where(i => i.TipoInfo == matchlove.Enum.TipoInfo.musica))
+                        {
+                            <li>@($"{info.Musica.titulo} ({info.Musica.artista})")</li>
+                        }
+                    </ul>
+                </td>
+                <!-- Coluna para exibir os hobbies -->
+                <td>
+                    @foreach (var info in item.Infos.Where(i => i.TipoInfo == matchlove.Enum.TipoInfo.hobby))
+                    {
+                        <li>@($"{info.Hobby.descricao}")</li>
+                    }
+                </td>
+                <!-- Coluna para exibir os filmes -->
+                <td>
+                    @foreach (var info in item.Infos.Where(i => i.TipoInfo == matchlove.Enum.TipoInfo.filme))
+                    {
+                        <li>@($"{info.Filme.titulo}")</li>
+                    }
+                </td>
                 <td>
                     <span class="heart" id="heart" style="font-size=130px">
                         &#x2764;
