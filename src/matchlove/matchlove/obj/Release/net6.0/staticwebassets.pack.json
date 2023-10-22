@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\matchlove.bundle.scp.css"
     },
     {
+      "Id": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\css\\heart.css",
+      "PackagePath": "staticwebassets\\css\\heart.css"
+    },
+    {
       "Id": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\js\\site.js",
