@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f7epnLPffhVI+dmCIC5tG21i3upGZBJGBPljAHNdK8M=",
+  "Hash": "PU0RwWMDM/vjAemi9VUP7Cvr3+Q8i8h2pJ5ZgFHp0sA=",
   "Source": "matchlove",
   "BasePath": "_content/matchlove",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\matchlove.bundle.scp.css"
     },
     {
+      "Identity": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\css\\heart.css",
+      "SourceId": "matchlove",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\",
+      "BasePath": "_content/matchlove",
+      "RelativePath": "css/heart.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\heart.css"
+    },
+    {
       "Identity": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\css\\site.css",
       "SourceId": "matchlove",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\js\\script.js",
+      "SourceId": "matchlove",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\",
+      "BasePath": "_content/matchlove",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
       "Identity": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\wwwroot\\js\\site.js",
