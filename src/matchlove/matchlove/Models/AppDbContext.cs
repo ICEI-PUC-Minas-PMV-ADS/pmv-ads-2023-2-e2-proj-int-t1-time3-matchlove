@@ -48,6 +48,7 @@ namespace matchlove.Models
             public DbSet<Filme> Filmes { get; set; }
             public DbSet<Musica> Musicas { get; set; }
             public DbSet<Hobby> Hobbies { get; set; }
+            public DbSet<Usuario> Usuarios { get; set; }
 
 
 

@@ -9,53 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = matchlove
 build_property.RootNamespace = matchlove
-build_property.ProjectDir = C:\PUC\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove\
+build_property.ProjectDir = C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\PUC\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove
+build_property.MSBuildProjectDirectory = C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Denuncias/denuncias.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Denuncias/denuncias.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVudW5jaWFzXGRlbnVuY2lhcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Descoberta/Create.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Descoberta/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzY29iZXJ0YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Descoberta/index.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Descoberta/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzY29iZXJ0YVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Home/Index.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Home/Privacy.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Matchs/Index.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Matchs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0Y2hzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Shared/Error.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/_ViewImports.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Usuarios/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/_ViewStart.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Shared/_Layout.cshtml]
+[C:/Users/Marcela/Documents/PROJETO_FACU/src/matchlove/matchlove/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1in2g4gnfr
