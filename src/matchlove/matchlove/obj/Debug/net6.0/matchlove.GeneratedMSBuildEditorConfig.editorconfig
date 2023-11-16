@@ -12,7 +12,7 @@ build_property.RootNamespace = matchlove
 build_property.ProjectDir = C:\Users\Vinicius\Documents\GitHub\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Vinicius\Documents\GitHub\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove
 build_property._RazorSourceGeneratorDebug = 
 
@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Vinicius/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Vinicius/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Likes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlrZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Vinicius/Documents/GitHub/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Matchs/Index.cshtml]
