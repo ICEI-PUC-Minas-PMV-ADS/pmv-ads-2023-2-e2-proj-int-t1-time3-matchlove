@@ -109,5 +109,35 @@ namespace matchlove.Controllers
 
             return View(dados);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> AdicionarDenuncia(int perfilDenunciadoId, int denuncianteId=1)
+        {
+            try
+            {
+
+                    // Crie uma nova denúncia
+                    var denuncia = new Denuncia
+                    {
+                        PerfilDenunciadoId = perfilDenunciadoId,
+                        DenuncianteId = denuncianteId,
+                        Status = Denuncia.StatusDenuncia.NaoLida
+                    };
+
+                    // Adicione a denúncia ao contexto do banco de dados
+                    _context.Denuncias.Add(denuncia);
+
+                    // Salve as alterações no banco de dados
+                    await _context.SaveChangesAsync();
+
+                // Retorne uma resposta de sucesso (opcional)
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                // Trate erros aqui conforme necessário
+                return BadRequest("Erro ao adicionar a denúncia: " + ex.Message);
+            }
+        }
     }
 }

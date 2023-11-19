@@ -30,27 +30,22 @@ namespace matchlove.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("Denunciado")
+                    b.Property<int>("DenuncianteId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Denunciante")
+                    b.Property<int>("PerfilDenunciadoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Descricao")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IdConteudo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Motivo")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Tipo")
+                    b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Denuncia");
+                    b.HasIndex("DenuncianteId");
+
+                    b.HasIndex("PerfilDenunciadoId");
+
+                    b.ToTable("Denuncias");
                 });
 
             modelBuilder.Entity("matchlove.Models.Filme", b =>
@@ -211,13 +206,6 @@ namespace matchlove.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("DenunciaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("FotoPerfil")
                         .HasColumnType("nvarchar(max)");
 
@@ -231,19 +219,7 @@ namespace matchlove.Migrations
                     b.Property<int>("OrientacaoSexual")
                         .HasColumnType("int");
 
-                    b.Property<int>("Perfil")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Telefone")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("DenunciaId");
 
                     b.ToTable("Pessoas");
                 });
@@ -270,6 +246,25 @@ namespace matchlove.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("matchlove.Models.Denuncia", b =>
+                {
+                    b.HasOne("matchlove.Models.Pessoa", "Denunciante")
+                        .WithMany("DenunciasFeitas")
+                        .HasForeignKey("DenuncianteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("matchlove.Models.Pessoa", "PerfilDenunciado")
+                        .WithMany("DenunciasRecebidas")
+                        .HasForeignKey("PerfilDenunciadoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Denunciante");
+
+                    b.Navigation("PerfilDenunciado");
                 });
 
             modelBuilder.Entity("matchlove.Models.Info", b =>
@@ -314,18 +309,10 @@ namespace matchlove.Migrations
 
             modelBuilder.Entity("matchlove.Models.Pessoa", b =>
                 {
-                    b.HasOne("matchlove.Models.Denuncia", null)
-                        .WithMany("Pessoas")
-                        .HasForeignKey("DenunciaId");
-                });
+                    b.Navigation("DenunciasFeitas");
 
-            modelBuilder.Entity("matchlove.Models.Denuncia", b =>
-                {
-                    b.Navigation("Pessoas");
-                });
+                    b.Navigation("DenunciasRecebidas");
 
-            modelBuilder.Entity("matchlove.Models.Pessoa", b =>
-                {
                     b.Navigation("Infos");
 
                     b.Navigation("Login");

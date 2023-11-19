@@ -1,24 +1,30 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic;
 
 namespace matchlove.Models
 {
-    [Table("Denuncia")]
+    [Table("Denuncias")]
     public class Denuncia
     {
         [Key]
         public int Id { get; set; }
-        public int Denunciante { get; set; }
-        public int Denunciado { get; set; }
-        public int Motivo { get; set; }
-        public string Descricao { get; set; }
-        public int Tipo { get; set; }
-        public ICollection<Pessoa> Pessoas { get; set; }
 
-        [ForeignKey("IdConteudo")]
+        [ForeignKey("PerfilDenunciado")]
+        public int PerfilDenunciadoId { get; set; }
+        public Pessoa PerfilDenunciado { get; set; }
 
-        public int IdConteudo { get; set; }
+        [ForeignKey("Denunciante")]
+        public int DenuncianteId { get; set; }
+        public Pessoa Denunciante { get; set; }
+
+        public StatusDenuncia Status { get; set; }
+
+        public enum StatusDenuncia
+        {
+            NaoLida,
+            Procedente,
+            Improcedente
+        }
     }
-
 }

@@ -1083,3 +1083,4 @@ C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove\obj\Debug\net6.0
 C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove\obj\Debug\net6.0\matchlove.pdb
 C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove\obj\Debug\net6.0\matchlove.genruntimeconfig.cache
 C:\Users\Marcela\Documents\PROJETO_FACU\src\matchlove\matchlove\obj\Debug\net6.0\ref\matchlove.dll
+C:\PUC\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove\bin\Debug\net6.0\BCrypt.Net-Next.dll
