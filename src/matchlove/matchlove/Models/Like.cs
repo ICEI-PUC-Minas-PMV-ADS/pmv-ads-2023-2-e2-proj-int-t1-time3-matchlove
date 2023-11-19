@@ -13,5 +13,7 @@ namespace matchlove.Models
         public bool Matched { get; set; } // indica se houve um match (like mútuo)
 
 
+
+
     }
 }

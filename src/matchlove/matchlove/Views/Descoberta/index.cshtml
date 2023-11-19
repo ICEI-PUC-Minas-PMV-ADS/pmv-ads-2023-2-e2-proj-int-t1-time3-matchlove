@@ -203,6 +203,11 @@
                         });
                     </script>
                 </td>
+
+                <!-- Users/Index.cshtml --> @model IEnumerable<User>
+<h1>Users</h1>
+<table class=“table”> <thead> <tr> <th>Id</th> <th>Name</th> <th></th> </tr> </thead> <tbody> @foreach (var item in Model) { <tr> <td>@item.Id</td> <td>@item.Name</td> <td> <form asp-action=“Create” asp-controller=“Likes” asp-route-likeeId=“@item.Id” method=“post”> <input type=“submit” value=“Like” class=“btn btn-primary” /> </form> </td> </tr> } </tbody> </table>
+
        @*      <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
