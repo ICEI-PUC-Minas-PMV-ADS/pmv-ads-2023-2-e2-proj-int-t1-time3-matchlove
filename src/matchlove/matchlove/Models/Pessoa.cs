@@ -24,7 +24,7 @@ namespace matchlove.Models
         //[Required(ErrorMessage = "Obrigatório informar o e-mail!")]
         //[DataType(DataType.EmailAddress, ErrorMessage = "Informe um e-mail valido")]
         //public string Email { get; set; }
-        public List<int> Matches { get; set; }
+        //public List<int> Matches { get; set; }
 
         //[Required(ErrorMessage = "Obrigatório informar senha!")]
         //[DataType(DataType.Password)]
