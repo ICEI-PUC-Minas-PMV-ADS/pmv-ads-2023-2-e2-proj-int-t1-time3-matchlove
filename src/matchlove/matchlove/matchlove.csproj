@@ -9,16 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Logins\**" />
     <Compile Remove="Views\NovaPasta1\**" />
     <Compile Remove="Views\NovaPasta\**" />
-    <Content Remove="Views\Logins\**" />
     <Content Remove="Views\NovaPasta1\**" />
     <Content Remove="Views\NovaPasta\**" />
-    <EmbeddedResource Remove="Views\Logins\**" />
     <EmbeddedResource Remove="Views\NovaPasta1\**" />
     <EmbeddedResource Remove="Views\NovaPasta\**" />
-    <None Remove="Views\Logins\**" />
     <None Remove="Views\NovaPasta1\**" />
     <None Remove="Views\NovaPasta\**" />
   </ItemGroup>
@@ -38,7 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Logins\Index.cshtml" />
     <None Include="wwwroot\css\heart.css" />
     <None Include="wwwroot\js\script.js" />
   </ItemGroup>

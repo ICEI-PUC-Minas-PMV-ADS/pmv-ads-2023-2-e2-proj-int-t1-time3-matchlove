@@ -18,9 +18,6 @@ namespace matchlove.Models
         public DateTime? DataNascimento { get; set; }
         public string FotoPerfil {  get; set; }
 
-
-        
-        public Login Login { get; set; }
         [Required(ErrorMessage = "Obrigatório informar o e-mail!")]
         [DataType(DataType.EmailAddress, ErrorMessage = "Informe um e-mail valido")]
         public string Email { get; set; }
