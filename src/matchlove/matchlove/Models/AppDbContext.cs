@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace matchlove.Models
 {
@@ -14,6 +15,18 @@ namespace matchlove.Models
             .HasForeignKey(i => i.PessoaId)
             .OnDelete(DeleteBehavior.Restrict);
             builder.Entity<Info>().HasIndex(i => i.PessoaId).HasDatabaseName("IX_Infos_PessoaId_Custom").IsUnique(false);
+            
+            builder.Entity<Denuncia>()
+                .HasOne(d => d.PerfilDenunciado)
+                .WithMany(p => p.DenunciasRecebidas)
+                .HasForeignKey(d => d.PerfilDenunciadoId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.Entity<Denuncia>()
+                .HasOne(d => d.Denunciante)
+                .WithMany(p => p.DenunciasFeitas)
+                .HasForeignKey(d => d.DenuncianteId)
+                .OnDelete(DeleteBehavior.Restrict);
 
 
 
@@ -42,13 +55,14 @@ namespace matchlove.Models
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
             public DbSet<Pessoa> Pessoas { get; set; }
             public DbSet<Match> Match { get; set; }
-            public DbSet<Denuncia> Denuncia { get; set; }
             public DbSet<Login> Login { get; set; }
             public DbSet<Info> Info { get; set; }
             public DbSet<Filme> Filmes { get; set; }
             public DbSet<Musica> Musicas { get; set; }
             public DbSet<Hobby> Hobbies { get; set; }
             public DbSet<Usuario> Usuarios { get; set; }
+
+            public DbSet<Denuncia> Denuncias { get; set; }  
 
 
 

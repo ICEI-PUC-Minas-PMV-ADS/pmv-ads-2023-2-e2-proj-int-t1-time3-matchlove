@@ -17,23 +17,23 @@ namespace matchlove.Models
         [Required(ErrorMessage = "A data de nascimento é obrigatório!")]
         public DateTime? DataNascimento { get; set; }
         public string FotoPerfil {  get; set; }
-
-
         
         public Login Login { get; set; }
-        [Required(ErrorMessage = "Obrigatório informar o e-mail!")]
-        [DataType(DataType.EmailAddress, ErrorMessage = "Informe um e-mail valido")]
-        public string Email { get; set; }
+        public virtual ICollection<Denuncia> DenunciasRecebidas { get; set; }
+        public virtual ICollection<Denuncia> DenunciasFeitas { get; set; }
+        //[Required(ErrorMessage = "Obrigatório informar o e-mail!")]
+        //[DataType(DataType.EmailAddress, ErrorMessage = "Informe um e-mail valido")]
+        //public string Email { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório informar senha!")]
-        [DataType(DataType.Password)]
-        public string Senha { get; set; }
+        //[Required(ErrorMessage = "Obrigatório informar senha!")]
+        //[DataType(DataType.Password)]
+        //public string Senha { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório Telefone")]
-        public int Telefone { get; set; }
+        //[Required(ErrorMessage = "Obrigatório Telefone")]
+        //public int Telefone { get; set; }
 
-        [Required(ErrorMessage = "Obrigatório Cadastrar Perfil")]
-        public TipoPerfils Perfil { get; set; }
+        //[Required(ErrorMessage = "Obrigatório Cadastrar Perfil")]
+        //public TipoPerfils Perfil { get; set; }
         // Propriedade de navegação para Infos
         public virtual ICollection<Info> Infos { get; set; }
 

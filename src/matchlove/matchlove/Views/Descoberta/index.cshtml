@@ -116,6 +116,7 @@
                 Filmes
             </th>
             <th>Like</th>
+            <th>Denunciar</th>
         </tr>
     </thead>
     <tbody>
@@ -201,6 +202,36 @@
                         document.getElementById("heart").addEventListener("click", function () {
                             this.classList.toggle("active");
                         });
+                    </script>
+                </td>
+                <td>
+                    <span class="heart" id="alert" style="font-size: 30px" onclick="enviarDenuncia('@item.Id', '@PrimeiroNome')">
+                        &#x26A0;
+                    </span>
+
+                    <script>
+                        function enviarDenuncia(idPerfilDenunciado, idUsuarioDenunciante, PrimeiroNome) {
+                            var formData = new FormData();
+                            formData.append('perfilDenunciadoId', idPerfilDenunciado);
+                            formData.append('denuncianteId', idUsuarioDenunciante);
+
+                            // Faça uma solicitação Fetch para o servidor para adicionar a denúncia
+                            fetch('@Url.Action("AdicionarDenuncia", "Descoberta")', {
+                                method: 'POST',
+                                body: formData
+                            })
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error('Ocorreu um erro ao adicionar a denúncia.');
+                                    }
+                                    // Lógica adicional após adicionar a denúncia, se necessário
+                                })
+                                .catch(error => {
+                                    console.error(error);
+                                    alert(error.message);
+                                });
+                            alert("O perfil foi denúnciado com sucesso. <br> Em breve nossa equipe irá análisar sua denúncia.");
+                        }
                     </script>
                 </td>
        @*      <td>
