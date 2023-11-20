@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\PUC\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\src\matchlove\matchlove
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Avaliacoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Avaliacoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Avaliacoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Avaliacoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbGlhY29lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/PUC/pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove/src/matchlove/matchlove/Views/Descoberta/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzY29iZXJ0YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

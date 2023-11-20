@@ -18,7 +18,7 @@ namespace matchlove.Models
         public DateTime? DataNascimento { get; set; }
         public string FotoPerfil {  get; set; }
         
-        public Login Login { get; set; }
+        //public Login Login { get; set; }
         public virtual ICollection<Denuncia> DenunciasRecebidas { get; set; }
         public virtual ICollection<Denuncia> DenunciasFeitas { get; set; }
         //[Required(ErrorMessage = "Obrigatório informar o e-mail!")]
