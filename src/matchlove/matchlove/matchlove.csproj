@@ -9,18 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Logins\**" />
     <Compile Remove="Views\NovaPasta1\**" />
-    <Compile Remove="Views\NovaPasta\**" />
+    <Compile Remove="Views\NovaPasta2\**" />
+    <Compile Remove="Views\NovaPasta3\**" />
+    <Compile Remove="Views\NovaPasta4\**" />
     <Content Remove="Views\Logins\**" />
     <Content Remove="Views\NovaPasta1\**" />
-    <Content Remove="Views\NovaPasta\**" />
+    <Content Remove="Views\NovaPasta2\**" />
+    <Content Remove="Views\NovaPasta3\**" />
+    <Content Remove="Views\NovaPasta4\**" />
     <EmbeddedResource Remove="Views\Logins\**" />
     <EmbeddedResource Remove="Views\NovaPasta1\**" />
-    <EmbeddedResource Remove="Views\NovaPasta\**" />
+    <EmbeddedResource Remove="Views\NovaPasta2\**" />
+    <EmbeddedResource Remove="Views\NovaPasta3\**" />
+    <EmbeddedResource Remove="Views\NovaPasta4\**" />
     <None Remove="Views\Logins\**" />
     <None Remove="Views\NovaPasta1\**" />
-    <None Remove="Views\NovaPasta\**" />
+    <None Remove="Views\NovaPasta2\**" />
+    <None Remove="Views\NovaPasta3\**" />
+    <None Remove="Views\NovaPasta4\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Likes.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -42,7 +53,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Logins\Index.cshtml" />
     <None Include="wwwroot\css\heart.css" />
     <None Include="wwwroot\js\script.js" />
   </ItemGroup>

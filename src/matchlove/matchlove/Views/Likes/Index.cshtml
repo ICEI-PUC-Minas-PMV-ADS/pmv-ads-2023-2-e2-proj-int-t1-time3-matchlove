@@ -1,0 +1,46 @@
+﻿@* <!-- Index.cshtml -->
+@model IEnumerable<Like>
+
+<h1>Likes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Liker</th>
+            <th>Likee</th>
+            <th>Matched</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.LikerId</td>
+                <td>@item.LikeeId</td>
+                <td>@item.Matched</td>
+                <td>
+                    <form asp-action="Delete" asp-route-id="@item.Id" method="post">
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Create.cshtml -->
+@model Like
+
+<h1>Create Like</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="LikeeId">Likee Id</label>
+        <input asp-for="LikeeId" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+ *@

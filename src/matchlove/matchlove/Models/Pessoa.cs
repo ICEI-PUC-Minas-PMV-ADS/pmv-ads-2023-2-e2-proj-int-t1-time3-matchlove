@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using matchlove.Enum;
 namespace matchlove.Models
@@ -18,12 +18,13 @@ namespace matchlove.Models
         public DateTime? DataNascimento { get; set; }
         public string FotoPerfil {  get; set; }
         
-        public Login Login { get; set; }
+        //public Login Login { get; set; }
         public virtual ICollection<Denuncia> DenunciasRecebidas { get; set; }
         public virtual ICollection<Denuncia> DenunciasFeitas { get; set; }
         //[Required(ErrorMessage = "Obrigatório informar o e-mail!")]
         //[DataType(DataType.EmailAddress, ErrorMessage = "Informe um e-mail valido")]
         //public string Email { get; set; }
+        //public List<int> Matches { get; set; }
 
         //[Required(ErrorMessage = "Obrigatório informar senha!")]
         //[DataType(DataType.Password)]

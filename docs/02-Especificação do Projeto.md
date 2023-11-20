@@ -70,13 +70,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-01| A plataforma deve apresentar na página principal uma seleção dinâmica de icones de perfis por meio dos cadastros realizados (canais) (API). | ALTA | 
 |RF-02| A plataforma deve apresentar, para cada usuário, uma imagem correspondente ào usuário.  (thumbnail).   | MÉDIA |
 |RF-03| A plataforma deve permitir ao usuário visualizar informações interativas sobre outro usuário, como filme preferido, hobbies. (Nada de entrevista de emprego).  | MÉDIA |
-|RF-04| A plataforma deve oferecer um menu adicional que permita ao usuário visualizar publicações dos usuários sobre assuntos diversos, criando interesses sem precisar dar MATCH.      | MÉDIA |
+|RF-04| A plataforma deve oferecer na página de descoberta um botão de coração para o usuário manifestar interesse em outra pessoa cadastrada.      | MÉDIA |
 |RF-05| A plataforma deve oferecer uma funcionalidade de filtro/pesquisa para permitir ao usuário localizar interesses mutuos. | ALTA |
-|RF-06| A plataforma deve oferecer a funcionalidade de notificações, permitindo aos usuários receberem alertas sobre novas mensagens, comentários ou atividades relevantes em seus perfis e publicações. | ALTA  |
-|RF-07| A plataforma deve incluir um sistema de classificação ou avaliação de perfis de usuários, permitindo que os usuários expressem sua opinião sobre outros perfis, ajudando assim a melhorar a experiência de recomendação e filtro de perfis.  | MÉDIA |
-|RF-08| A plataforma deve permitir que os usuários salvem os perfis pesquisados, publicações de usuários, armazenando essas informações no armazenamento local do navegador.  | MÉDIA |
+|RF-06| A plataforma deve oferecer ao usuário a possibilidade de visualizar a sua lista de matchs, onde deve informar dados de contato dos usuários com quem deu match. | ALTA  |
+|RF-07| A plataforma deve oferecer uma funcionalidade de pesquisa de satisfação dos usuários para análise e melhores futuras.  | MÉDIA |
+|RF-08| A plataforma deve gerar um novo match sempre que um usuário der um like em um usuário que havia dado like nele previamente.   | MÉDIA |
 |RF-09| A plataforma de oferecer uma funcionalidade para que o usuário denuncie perfis de usuário praticando má conduta. | ALTA |
-|RF-10| A plataforma deve permitir que os usuários possam comentar sobre as publicações. | MÉDIA |
+|RF-10| A plataforma deve permitir que os usuários de perfil administrador visualizem os usuários denúnciados | MÉDIA |
 
 
 
