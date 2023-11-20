@@ -10972,19 +10972,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vinicius\\.nuget\\packages\\": {}
+    "C:\\Users\\Vibe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinicius\\Documents\\GitHub\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
+      "projectUniqueName": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
       "projectName": "matchlove",
-      "projectPath": "C:\\Users\\Vinicius\\Documents\\GitHub\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
-      "packagesPath": "C:\\Users\\Vinicius\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vinicius\\Documents\\GitHub\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\obj\\",
+      "projectPath": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\matchlove.csproj",
+      "packagesPath": "C:\\Users\\Vibe\\.nuget\\packages\\",
+      "outputPath": "C:\\PUC\\pmv-ads-2023-2-e2-proj-int-t1-time3-matchlove\\src\\matchlove\\matchlove\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vinicius\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vibe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11064,7 +11064,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
